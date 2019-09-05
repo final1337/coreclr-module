@@ -1,0 +1,4014 @@
+{
+  "homepages": [],
+  "source_base_path": "/Users/fabianterhorst/Documents/GitHub/altv-csharp/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Alt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Alt.html",
+          "hash": "uR8/fobTw0pQ1wkpLWv9/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.AltAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.AltAsync.html",
+          "hash": "hC0r0bMm5t41N/u7FaVM0A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.AsyncBaseBaseObjectPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.AsyncBaseBaseObjectPool.html",
+          "hash": "Q47c0VxAJMpIKo3viRd/OA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.AsyncBaseObjectPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.AsyncBaseObjectPool-1.html",
+          "hash": "FzgudSMP3lcFv6UybesW/A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.AsyncEntityPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.AsyncEntityPool-1.html",
+          "hash": "XKs18gPgr6NHAbI0zcWT7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.AsyncEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.AsyncEvent.html",
+          "hash": "WgV18xZDNG4Ek8MBEYjizg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.AsyncModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.AsyncModule.html",
+          "hash": "n7Ji1sck8N1dNkur+qHLCQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.AsyncResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.AsyncResource.html",
+          "hash": "XQkU7jBxtCEAOyrEb9OYrw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.ChannelTickSchedulerFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.ChannelTickSchedulerFactory.html",
+          "hash": "iR1u9dL6FyqChf+QdQnjWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.DefaultTickSchedulerFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.DefaultTickSchedulerFactory.html",
+          "hash": "tHG/jN3XVF8wHlfVlmssEw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Elements.Entities.VehicleBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Elements.Entities.VehicleBuilder.html",
+          "hash": "xFBOI+Oywy+gJYTzUmORXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Elements.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Elements.Entities.html",
+          "hash": "pg/6AIjjX4Ulu65cEtkfMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncBlipPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncBlipPool.html",
+          "hash": "/OP8LPoRVGie0vnnrBpL9Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncCheckpointPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncCheckpointPool.html",
+          "hash": "L8cmbNxdYlTSXcgLRONvbg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncColShapePool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncColShapePool.html",
+          "hash": "EmFQseVAunTT8WgGHgbLfw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncPlayerPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncPlayerPool.html",
+          "hash": "ZmdMqTt7oF++7jC83yZDfg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncVehiclePool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncVehiclePool.html",
+          "hash": "dXAheEYv18TPghmq3fIfuw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncVoiceChannelPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Elements.Pools.AsyncVoiceChannelPool.html",
+          "hash": "Td3VlOYNPSMZL1hSU5vNRA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Elements.Pools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Elements.Pools.html",
+          "hash": "EwzKwxNBN2Hia6YxB1P3oA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.CheckpointAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.CheckpointAsyncDelegate.html",
+          "hash": "NAmEdImqSTzWAA+qd65wwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.ClientEventAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.ClientEventAsyncDelegate.html",
+          "hash": "/EIaccnjVa0rjgWXmoQ+mw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.ColShapeAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.ColShapeAsyncDelegate.html",
+          "hash": "xZ9nVTzwOUbR3eQyb2+b0g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.ConsoleCommandAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.ConsoleCommandAsyncDelegate.html",
+          "hash": "GzAYw2TLH9ZHhkenKyUlpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.MetaDataChangeAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.MetaDataChangeAsyncDelegate.html",
+          "hash": "vYQNwSxtfUBNlX5nsElB4w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.PlayerChangeVehicleSeatAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.PlayerChangeVehicleSeatAsyncDelegate.html",
+          "hash": "f9aAn7Bav9cJ1+BiX46fIA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.PlayerClientEventAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.PlayerClientEventAsyncDelegate.html",
+          "hash": "+kHxa0R7X0bGo+JnWlQV3Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.PlayerConnectAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.PlayerConnectAsyncDelegate.html",
+          "hash": "tZY6F+8nt6DycESRGSI/9A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.PlayerDamageAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.PlayerDamageAsyncDelegate.html",
+          "hash": "fOJDBNWi+JH4lLtimNucPw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.PlayerDeadAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.PlayerDeadAsyncDelegate.html",
+          "hash": "CB4CcsRXHvZytuQAiApeyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.PlayerDisconnectAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.PlayerDisconnectAsyncDelegate.html",
+          "hash": "fkMkrP9lmzthYOvtu7JDCA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.PlayerEnterVehicleAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.PlayerEnterVehicleAsyncDelegate.html",
+          "hash": "q/GKK8vL7EVImLp733EEAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.PlayerLeaveVehicleAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.PlayerLeaveVehicleAsyncDelegate.html",
+          "hash": "pPG1yxxydcJbExxFyip+Hg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.PlayerRemoveAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.PlayerRemoveAsyncDelegate.html",
+          "hash": "BggpVcum7iG95Bg7l///LA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.ServerEventAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.ServerEventAsyncDelegate.html",
+          "hash": "S401BzVzmfoo/BUL0jmSjg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.VehicleRemoveAsyncDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.VehicleRemoveAsyncDelegate.html",
+          "hash": "hcFA/GUegB02YXczMtw77g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.Events.html",
+          "hash": "Ik/Yqq+PaP7lLXa6isy9GA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.ITickSchedulerFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.ITickSchedulerFactory.html",
+          "hash": "95uVZEl65yRt8R5tCYrKbQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.IVehicleBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.IVehicleBuilder.html",
+          "hash": "SCTpq/HlKVl+HKyqMPO5hw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.MValueLocked.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.MValueLocked.html",
+          "hash": "vfCSPpG+BGqH/U1U5JtunQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.TickScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.TickScheduler.html",
+          "hash": "dNmJniBWX2jBapULjcfMUg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Async.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Async.html",
+          "hash": "m2+UpZscPhM4MqiJMJNGDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.CSharpNativeResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.CSharpNativeResource.html",
+          "hash": "zQCfU2awMugolkUgzd5N2g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Chat.Chat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Chat.Chat.html",
+          "hash": "dVYVAqYPsi7PVT0/ZEGfjQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Chat.CommandHandlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Chat.CommandHandlers.html",
+          "hash": "lx7YbEo5tjmr3ie+NpOjOw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Chat.PlayerChat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Chat.PlayerChat.html",
+          "hash": "EZHWjBkv3xmQykusS/EhKg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Chat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Chat.html",
+          "hash": "q4CBELIMO2LutiD+6kwnow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.AltColShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.AltColShape.html",
+          "hash": "rjdoOQNmQ19lFP6oslLxTA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.ColShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.ColShape.html",
+          "hash": "oTOTGWZKCQXTP9pGJf1cLg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.ColShapeModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.ColShapeModule.html",
+          "hash": "8z/6nhtxTrfAZpOfl9glGw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.ColShapeModuleOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.ColShapeModuleOptions.html",
+          "hash": "ooVJp8XSp18v50gQSC/4Xg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.IColShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.IColShape.html",
+          "hash": "8asErF5nJxbZwuQmxYuC+w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.Tests.CustomColShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.Tests.CustomColShape.html",
+          "hash": "hjql0LRvsStQU+p6R/hhaA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.Tests.MockColShapeModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.Tests.MockColShapeModule.html",
+          "hash": "vS1ovF9HlwnBzDIVQWbBTw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.Tests.MockPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.Tests.MockPlayer.html",
+          "hash": "wa1xQI4wyfJ5hwRBUhjyEA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.Tests.MockPlayerPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.Tests.MockPlayerPool.html",
+          "hash": "k+3pYaICeFAITX1ZOYDLVw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.Tests.MockVehicle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.Tests.MockVehicle.html",
+          "hash": "rno62WwHqai0hLb3CFgQLA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.Tests.MockVehiclePool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.Tests.MockVehiclePool.html",
+          "hash": "rk0IV6yBvLnBUTvUFnv6tA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.Tests.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.Tests.Tests.html",
+          "hash": "97EoGzInPzsRegZ3WpWcWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.Tests.html",
+          "hash": "Bb/Rx4Vgl3Bf+jXXetOWpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColShape.html",
+          "hash": "pCthoGSYeM5sPxufoCxK1g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColoredConsole.ColoredMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColoredConsole.ColoredMessage.html",
+          "hash": "aEeaP+8qk2IJu8pBTicxjQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColoredConsole.TextColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColoredConsole.TextColor.html",
+          "hash": "DzIzgRUcEbDmKKo4EfiIDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ColoredConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ColoredConsole.html",
+          "hash": "qDp2e3l4uj7/JKs0gfVtUQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Data.DegreeRotation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Data.DegreeRotation.html",
+          "hash": "vP60eFJ+MHYM1/idKEXzUw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Data.Position.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Data.Position.html",
+          "hash": "Dn0CfxFxRv/2tGkFj7eOGg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Data.ReadOnlyPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Data.ReadOnlyPlayer.html",
+          "hash": "wbEl2clPj4x18Za3QkroWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Data.Rgba.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Data.Rgba.html",
+          "hash": "45oJClt9MXGHSvgWIE0Lig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Data.Rotation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Data.Rotation.html",
+          "hash": "2OGWefZVZS923PT6K64f8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Data.VehicleConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Data.VehicleConstants.html",
+          "hash": "3MviCR0JOmU0GxL1OCxsZw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Data.Weapons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Data.Weapons.html",
+          "hash": "kIJtFMGpN4xN7ld4U6i5SA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Data.html",
+          "hash": "J4j/NGUD4F/NUSUklW5ZWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Args.DefaultMValueAdapters.DefaultArrayAdapter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Args.DefaultMValueAdapters.DefaultArrayAdapter-1.html",
+          "hash": "SDQ5SPXy8pihQzlD+Wst4w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Args.DefaultMValueAdapters.DefaultDictionaryAdapter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Args.DefaultMValueAdapters.DefaultDictionaryAdapter-1.html",
+          "hash": "Tk8OLrk9cmXJHrxzES9MFQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Args.DefaultMValueAdapters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Args.DefaultMValueAdapters.html",
+          "hash": "loj/oUf6/GncIkgpy1HLuw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Args.MValue.Function.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Args.MValue.Function.html",
+          "hash": "7kliVxqt/gu+gDHnrRkCuA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Args.MValue.Type.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Args.MValue.Type.html",
+          "hash": "MyypTWG24Atzilcou79geQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Args.MValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Args.MValue.html",
+          "hash": "Wbq22NEe8n3rS4gl2+FSmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Args.MValueAdapters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Args.MValueAdapters.html",
+          "hash": "pxs+2lHMESA8I9BuNj9EWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Args.MValueArrayBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Args.MValueArrayBuffer.html",
+          "hash": "N0BYPVsmvpq/oSY5qUxYqA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Args.MValueReaderToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Args.MValueReaderToken.html",
+          "hash": "4vLIzheb1dVkwlnAHIil1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Args.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Args.html",
+          "hash": "ivwDJLd8r8l1NrVXvsjT6A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.BaseObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.BaseObject.html",
+          "hash": "det0q+FNJZaLwritTQTEvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.BaseObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.BaseObjectExtensions.html",
+          "hash": "s1Okjobl7fYdEyR783pBDA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.BaseObjectRemovedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.BaseObjectRemovedException.html",
+          "hash": "v0mbMzSCK0mhXP6VSCXcLQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.BaseObjectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.BaseObjectType.html",
+          "hash": "9mMsQNErrjNy0uHHaJnx7A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.Blip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.Blip.html",
+          "hash": "ceVaLMRQTvyMyaxZNuSwyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.BlipType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.BlipType.html",
+          "hash": "iNw1JuyCsX1jcS9OLjKeqQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.Checkpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.Checkpoint.html",
+          "hash": "TTWFikxCnQefy15QoAHbYQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.CheckpointType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.CheckpointType.html",
+          "hash": "FLACGRiHEXHfB6qtN9yMVg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.ColShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.ColShape.html",
+          "hash": "0lxAWJCMCyOaJ4r8ZqmaUw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.ColShapeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.ColShapeType.html",
+          "hash": "Qhc9+TBcIGzZEQNNoUmWKg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.Entity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.Entity.html",
+          "hash": "1Pu+X8lZhXEfMFVDAE66ew=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.EntityExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.EntityExtensions.html",
+          "hash": "Aav/F0JnZej4iPoBYdJgNg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.EntityRemovedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.EntityRemovedException.html",
+          "hash": "bJuTOGVOYSc0suGm4GW4wA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.IBaseObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.IBaseObject.html",
+          "hash": "vz4zOk/rYq8sk3pPm2F+Yw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.IBlip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.IBlip.html",
+          "hash": "7t5Nw62+RkQg86BChlBZMg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.ICheckpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.ICheckpoint.html",
+          "hash": "Zi3UIMp+FKUTcsR1WJRdUQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.IColShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.IColShape.html",
+          "hash": "NOGH6cu3tHslTlDLVQeIjA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.IEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.IEntity.html",
+          "hash": "i/rrd3Ba5AvHJnZuh3FfPg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.IPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.IPlayer.html",
+          "hash": "/OwrMZFbrVZxvusfxaBNTQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.IVehicle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.IVehicle.html",
+          "hash": "wvd0S3lCmoHdCj918vjodA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.IVoiceChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.IVoiceChannel.html",
+          "hash": "nykF2qt+09z9lOxtXRIySA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.IWorldObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.IWorldObject.html",
+          "hash": "HkuzH3hLdmXFNwpJrdzEQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.Player.html",
+          "hash": "2fL92Oho5m3kO47Ae4PPgQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.PlayerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.PlayerExtensions.html",
+          "hash": "lNcykCU/As/Zc+j9AIwvyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.Vehicle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.Vehicle.html",
+          "hash": "lo3jAMj01tV9BH7WnIoSqA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.VehicleEnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.VehicleEnumExtensions.html",
+          "hash": "Q+nwSE5OgWfsTsUEewkRSw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.VoiceChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.VoiceChannel.html",
+          "hash": "fQ3XcUKlqaL2lwpaUwap/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.WorldObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.WorldObject.html",
+          "hash": "mtULvJGEdu7ZFAbYrQnhpQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.WorldObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.WorldObjectExtensions.html",
+          "hash": "0IxMSsG5ww4PmcvUeM1iww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.WorldObjectRemovedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.WorldObjectRemovedException.html",
+          "hash": "QoMnzl76KAsbKKwLDRC6Bg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Entities.html",
+          "hash": "KwfhRBlOf6zoBBXgiCjP0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Factories.BlipFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Factories.BlipFactory.html",
+          "hash": "gzP7BQS9KAPcWH38xaY1Kw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Factories.CheckpointFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Factories.CheckpointFactory.html",
+          "hash": "r/+dnZ/SB/2YM4IEIdF4FQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Factories.ColShapeFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Factories.ColShapeFactory.html",
+          "hash": "5YtF+27U2tFa6TB4QU/V0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Factories.PlayerFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Factories.PlayerFactory.html",
+          "hash": "bF8cQnvDBS6XVgPSP0R3sg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Factories.VehicleFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Factories.VehicleFactory.html",
+          "hash": "dg0NetlZsUIL2/OjXHg+YA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Factories.VoiceChannelFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Factories.VoiceChannelFactory.html",
+          "hash": "Up9iY6pAI1XZGNL4PiQyNQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Factories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Factories.html",
+          "hash": "1nkUTHLBJkdJZmcaUO9WZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Pools.BaseBaseObjectPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Pools.BaseBaseObjectPool.html",
+          "hash": "LSiYMFZJyTa8PUAIRkuFuA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Pools.BaseEntityPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Pools.BaseEntityPool.html",
+          "hash": "h0EnSOtqImKBi8qecsOmqA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Pools.BaseObjectPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Pools.BaseObjectPool-1.html",
+          "hash": "dvKanezOo1zZISN/LiOIvg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Pools.BlipPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Pools.BlipPool.html",
+          "hash": "TfCT9Txt5qEHCIApQIaHwg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Pools.CheckpointPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Pools.CheckpointPool.html",
+          "hash": "Czi9rcAndJv1ABEwVttxEw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Pools.ColShapePool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Pools.ColShapePool.html",
+          "hash": "YAPsdMVqXEqoF2VK6gJu9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Pools.EntityPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Pools.EntityPool-1.html",
+          "hash": "aLG1uL/fBGbqr8V5Z9niWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Pools.PlayerPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Pools.PlayerPool.html",
+          "hash": "YqDUIiv3TeZyKnY+Ep3P+Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Pools.VehiclePool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Pools.VehiclePool.html",
+          "hash": "VxGcurqWO94Lg5PKDz7Dcw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Pools.VoiceChannelPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Pools.VoiceChannelPool.html",
+          "hash": "q17TPnSPxNdWdNV9s71vsg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Elements.Pools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Elements.Pools.html",
+          "hash": "bhN/X+NL+/Fb88ZRofdWvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.NumberPlateStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.NumberPlateStyle.html",
+          "hash": "s702/bBzh1lmGsT3YfXaJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.PedModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.PedModel.html",
+          "hash": "dJdmJd2c4eNvXMFcWzC/lA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.RadioStation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.RadioStation.html",
+          "hash": "VG26CPJrvpsRoDjp6XmYsQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.VehicleBumper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.VehicleBumper.html",
+          "hash": "MHFSNvkx5GBEZiD1OHHkgQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.VehicleBumperDamage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.VehicleBumperDamage.html",
+          "hash": "JCYMR+g6/DpsSAUQ5TcBYQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.VehicleDoor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.VehicleDoor.html",
+          "hash": "YBqt+W5LUP3LX5Q1iCxICw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.VehicleDoorState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.VehicleDoorState.html",
+          "hash": "qfRe/oM5tJ8UhjE9jjFH1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.VehicleLockState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.VehicleLockState.html",
+          "hash": "BCxPwxRK/57lPxxr5XASPw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.VehicleModType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.VehicleModType.html",
+          "hash": "mdXt7bH1G7QevKT+99/ggw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.VehicleModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.VehicleModel.html",
+          "hash": "g6FcnAdIQul/6pJMV2Q8HA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.VehiclePart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.VehiclePart.html",
+          "hash": "XmzI4QiArzalj1+2w5DnhQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.VehiclePartDamage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.VehiclePartDamage.html",
+          "hash": "IjeIJMrUg/TEfCuDfMKLMg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.WeaponModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.WeaponModel.html",
+          "hash": "2zisga7VbYXhSU8h6umfqA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.WeatherType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.WeatherType.html",
+          "hash": "1qR4qiAUHPQ6XZg2GEV/YQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.WindowTint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.WindowTint.html",
+          "hash": "VxX1Q3Q7CdFlbuDRdfX1Vg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Enums.html",
+          "hash": "uHw/T7QMrRQEeRaGrLrjcg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Event.html",
+          "hash": "hbXjtX+SJafwBjkXEtJ8cw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.CheckpointDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.CheckpointDelegate.html",
+          "hash": "CovUt/yx8cfFobdSXrq8hw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.ClientEventDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.ClientEventDelegate.html",
+          "hash": "L6ViERoL0A46z9yzMQEFFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.ColShapeDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.ColShapeDelegate.html",
+          "hash": "wKqceEFYNOj8275Sft7caQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.ConsoleCommandDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.ConsoleCommandDelegate.html",
+          "hash": "gfvB+gcphxm2QkQXXSKw9Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.MetaDataChangeDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.MetaDataChangeDelegate.html",
+          "hash": "qlmeOaZg94YUTtssrdcYig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.PlayerChangeVehicleSeatDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.PlayerChangeVehicleSeatDelegate.html",
+          "hash": "toCth0E9WpweromKrOmzgw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.PlayerClientCustomEventDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.PlayerClientCustomEventDelegate.html",
+          "hash": "F+EMbJVI7wFw750+7yDFMg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.PlayerClientEventDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.PlayerClientEventDelegate.html",
+          "hash": "2gZ0GP+PLp99dd1dEliHBA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.PlayerConnectDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.PlayerConnectDelegate.html",
+          "hash": "eSEq+D1wzmYbhVARMY0qwg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.PlayerDamageDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.PlayerDamageDelegate.html",
+          "hash": "65b7J1Ii+bswy+XEVZ4knQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.PlayerDeadDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.PlayerDeadDelegate.html",
+          "hash": "DoTBqcovhsInUFgbH9lo2Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.PlayerDisconnectDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.PlayerDisconnectDelegate.html",
+          "hash": "S0zc0Z/m375fSxY+vGDu5w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.PlayerEnterVehicleDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.PlayerEnterVehicleDelegate.html",
+          "hash": "29KHo3zWQ478aQJvKVM/Kw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.PlayerLeaveVehicleDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.PlayerLeaveVehicleDelegate.html",
+          "hash": "Ealsqqn53upxmLjpCpp47A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.PlayerRemoveDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.PlayerRemoveDelegate.html",
+          "hash": "x5nxax61/EqpdOHwRuRaRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.ServerCustomEventEventDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.ServerCustomEventEventDelegate.html",
+          "hash": "UM8M/jn7vzDACZrIPf9YBA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.ServerEventDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.ServerEventDelegate.html",
+          "hash": "IJpiNwAP2yQ/QuySQkjkYA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.ServerEventEventDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.ServerEventEventDelegate.html",
+          "hash": "dYfmdTJkEOsMvNy0qL+U+g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.VehicleRemoveDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.VehicleRemoveDelegate.html",
+          "hash": "79m49ZL0O47/g7VFc3WSqg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Events.html",
+          "hash": "83w90S0OaCwTpP3myt8QlA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.Chat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.Chat.html",
+          "hash": "q9qxFMMvGWmlJFBWbbFtpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.ChildConvertibleObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.ChildConvertibleObject.html",
+          "hash": "oBB2lQ6tFJ9YUDy6at1ZBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.ConvertibleObject.ConvertibleObjectAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.ConvertibleObject.ConvertibleObjectAdapter.html",
+          "hash": "ykhMWwv+MKHjjON0lo/+Ig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.ConvertibleObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.ConvertibleObject.html",
+          "hash": "gAygJ0JSMHp2nE8t3Z8yow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.IMyInvalidVehicle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.IMyInvalidVehicle.html",
+          "hash": "OS+7jQh3ECS4e5cFte+iZw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.IMyPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.IMyPlayer.html",
+          "hash": "aus5iW+dNPha005RloZNJQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.IMyVehicle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.IMyVehicle.html",
+          "hash": "5E+lmrSybInLNVJLI+DA0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.MyPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.MyPlayer.html",
+          "hash": "IXksSweN3G0SnA5fsV00lA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.MyVehicle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.MyVehicle.html",
+          "hash": "hKk2KaO8jL9J69ozeb2xwA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.MyVehicleFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.MyVehicleFactory.html",
+          "hash": "qXbT5xpJ2jz0zeBCgjXOZg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.SampleResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.SampleResource.html",
+          "hash": "kc3yWstcnsRt10m6rcYPPw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.SampleScript.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.SampleScript.html",
+          "hash": "I2YAZcnDhgYfU+s4g+PJOw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.WritableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.WritableObject.html",
+          "hash": "djbhNg6tVOA5De0b/kHeww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Example.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Example.html",
+          "hash": "nlPU6j8gVnd+4tNHPCYSVQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Function.Func.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Function.Func.html",
+          "hash": "IW2ZyRYIFF+I+7f6s6KWhA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Function.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Function.html",
+          "hash": "WOGIyYTwlzxIEMNjqZS2Cw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.FunctionParser.ClientEventParser-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.FunctionParser.ClientEventParser-1.html",
+          "hash": "XjgJ2nT+IXPJOdfvZ6l8ug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.FunctionParser.IParserClientEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.FunctionParser.IParserClientEventHandler.html",
+          "hash": "jUrz1spMCogiIQjCzpUNrw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.FunctionParser.IParserServerEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.FunctionParser.IParserServerEventHandler.html",
+          "hash": "GuT2yKZeSXfZAorXbam8Ug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.FunctionParser.ParserClientEventHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.FunctionParser.ParserClientEventHandler-1.html",
+          "hash": "TXzgJP6BtAbnjhvV8gx2KA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.FunctionParser.ParserServerEventHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.FunctionParser.ParserServerEventHandler-1.html",
+          "hash": "dv5FHdvJkya0RB7w0fSH4w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.FunctionParser.ScriptFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.FunctionParser.ScriptFunction.html",
+          "hash": "qJQA/4lh+CzBquZtkfdjRA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.FunctionParser.ServerEventParser-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.FunctionParser.ServerEventParser-1.html",
+          "hash": "qTokOnHxNToU+NNYppjC2Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.FunctionParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.FunctionParser.html",
+          "hash": "jB1kDLO9UrITTgMKY1wWiA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Host.Host.LibArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Host.Host.LibArgs.html",
+          "hash": "/IhPSjxte2ul5/wKzDsgHA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Host.Host.UnloadArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Host.Host.UnloadArgs.html",
+          "hash": "xVTr2qjPItew5lXi8iwfNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Host.Host.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Host.Host.html",
+          "hash": "cIdizJzGk2LgjquYkRAO1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Host.ResourceAssemblyLoadContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Host.ResourceAssemblyLoadContext.html",
+          "hash": "rFJVjeGa1lL5r79gxH/ItA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Host.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Host.html",
+          "hash": "4PTShAh/janOt/XoiFSxXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IBaseBaseObjectPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IBaseBaseObjectPool.html",
+          "hash": "BpKspnk6kIGIVVEhb/XwZg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IBaseEntityPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IBaseEntityPool.html",
+          "hash": "2Xnm3Xr6rRr9MYcO5HSStA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IBaseObjectFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IBaseObjectFactory-1.html",
+          "hash": "vwoRwuVhE4PAycoZNIzWqg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IBaseObjectPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IBaseObjectPool-1.html",
+          "hash": "Yw7sDPlbUmxaW1jY8rrtBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IEntityFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IEntityFactory-1.html",
+          "hash": "72WY8xzVmzismb0WIW4ufA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IEntityPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IEntityPool-1.html",
+          "hash": "3cp/KbcGp55lL21BrXOUng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IMValueAdapter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IMValueAdapter-1.html",
+          "hash": "5Pq3NdIv+P4ZGPAGztcxKg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IMValueBaseAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IMValueBaseAdapter.html",
+          "hash": "Nsndw69M6yzHlVNJY1R75A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IMValueConvertible.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IMValueConvertible.html",
+          "hash": "4/BVBCH5RfFwR0nT0aFZXA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IMValueDeserializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IMValueDeserializer-1.html",
+          "hash": "AzlfJAJe+F86Hvb7BZ9d/A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IMValueReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IMValueReader.html",
+          "hash": "hPkxn+qawQSt4Ok5+Yq+pA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IMValueSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IMValueSerializer-1.html",
+          "hash": "ART7Q02TbeQ5bONoKyn0Ow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IMValueWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IMValueWriter.html",
+          "hash": "veorD2YcOQX+s3fAXXbFcQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.INativeResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.INativeResource.html",
+          "hash": "gIuEFtCYoHAVciPEXU2Keg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IResource.html",
+          "hash": "LKNMYPN/DDeJlEa+7d3C0g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IScript.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IScript.html",
+          "hash": "L/8UnoO+YrJQphltZuv+2A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IServer.html",
+          "hash": "uOVbcq9ryXTg25F3caFRqA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.IWritable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.IWritable.html",
+          "hash": "J4n/4R0loLTo1CTTkwloFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.InvalidImportException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.InvalidImportException.html",
+          "hash": "J7irXRUv4oi4ZV/KkyA3Ng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockAltV-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockAltV-6.html",
+          "hash": "nx+BmZAnkivuu5YwRLBXyQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockAssemblyLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockAssemblyLoader.html",
+          "hash": "fC1KDIVpxM92Amv1JzNPJw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockBaseBaseObjectPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockBaseBaseObjectPool.html",
+          "hash": "3Os7oJv84cVLPpUafHvPKw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockBaseEntityPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockBaseEntityPool.html",
+          "hash": "z38LJiBZ1IaTthgdVEI4mA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockBlip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockBlip.html",
+          "hash": "yE1VuB6B9ATjbyFJhPCCpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockBlipFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockBlipFactory-1.html",
+          "hash": "YUvcqFb7a3lSXWMxq58F8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockBlipPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockBlipPool.html",
+          "hash": "vtyNzNYLZMCeOVbl/2ct1Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockCheckpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockCheckpoint.html",
+          "hash": "hXcvpqI+AAxPum7Qife4kw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockCheckpointEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockCheckpointEvents.html",
+          "hash": "QdvKzm68/hSptv7U6W1Hvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockCheckpointFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockCheckpointFactory-1.html",
+          "hash": "bXMj/+FmfSyxMEZkTyKPYg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockCheckpointPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockCheckpointPool.html",
+          "hash": "W/MmwepNtoOeYfQyBJAXQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockClientEvents.ClientAnyEventMockDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockClientEvents.ClientAnyEventMockDelegate.html",
+          "hash": "pwGvEgmq+4Bxrtw5ayzccw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockClientEvents.ClientEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockClientEvents.ClientEvent.html",
+          "hash": "bijx1p6vUpIGUrcAEfwpGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockClientEvents.ClientEventMockDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockClientEvents.ClientEventMockDelegate.html",
+          "hash": "SEZ6cmyHKRGq24fbXJzPWg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockClientEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockClientEvents.html",
+          "hash": "o98pwSHGJYVfsgpe1cHKVQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockColShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockColShape.html",
+          "hash": "EyfVmgaEoMNi2XFvP4O4Jg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockColShapeFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockColShapeFactory-1.html",
+          "hash": "dOf4Sb8VJU24L1xs2patTA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockColShapePool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockColShapePool.html",
+          "hash": "+RlJwa+GDsLuXybkaf2HHQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockDecorator-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockDecorator-2.html",
+          "hash": "WlXDB/lHpbNTDiCUlfqL8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockEntities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockEntities.html",
+          "hash": "j0awsck0AQSkhfM992pEvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockEntity.html",
+          "hash": "BR4hvzly+3q2RO4r0ZX8Ww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockPlayer.html",
+          "hash": "f0eK7PkXHq1/JI0H6n9eQA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockPlayerEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockPlayerEvents.html",
+          "hash": "/1FLAyhTO9GSUadzfDTkVg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockPlayerFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockPlayerFactory-1.html",
+          "hash": "zNRBAB00p2NTCcOAv+FY4Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockPlayerPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockPlayerPool.html",
+          "hash": "a+xkITAevAiGC5Yzb0++Jg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockServer.html",
+          "hash": "09CleKV/tZuCJ0hvuwe8kw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockVehicle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockVehicle.html",
+          "hash": "Pf60D7Uog7XckmuJRlh7IQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockVehicleFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockVehicleFactory-1.html",
+          "hash": "8yZtYqZIJOnr9Xy2tuVSVQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockVehiclePool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockVehiclePool.html",
+          "hash": "HLK7JSc3w/kSYTb3TWRkuw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockVoiceChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockVoiceChannel.html",
+          "hash": "oMMEEj2Em+WzQmC6Ex42Zw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockVoiceChannelFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockVoiceChannelFactory-1.html",
+          "hash": "YauaGDVobiIs8MRn3a5ENw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockVoiceChannelPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockVoiceChannelPool.html",
+          "hash": "APg6Qu4+FUCj7wOS9ojcQA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.MockWorldObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.MockWorldObject.html",
+          "hash": "MZFqw5WL67El5TcFfrOTRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock.html",
+          "hash": "PUihLkcneVXuudlTzvVIpA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock2.Mock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock2.Mock.html",
+          "hash": "bvTCW7qF4r4FyR0G6Tl1fg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Mock2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Mock2.html",
+          "hash": "IqPaKl3itM/IvcX7aCnf+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Module.html",
+          "hash": "7ON8w3QI5cdfFWVHxbiJRA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.BoolStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.BoolStorage.html",
+          "hash": "jleHVuUT79mIuxvXuZ4fLg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.DoubleStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.DoubleStorage.html",
+          "hash": "0MCUY0LneyliSVFWG+GwkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.EntityStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.EntityStorage.html",
+          "hash": "z46uWLhHCgoqF11kVCwc1Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.FunctionStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.FunctionStorage.html",
+          "hash": "y3n1QmV9iRAoURu2NXERZg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.IntStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.IntStorage.html",
+          "hash": "pJCnrk4X9QutJOc7AELSzA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.MValueArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.MValueArray.html",
+          "hash": "5chOVq9EJuDIsbySj2bwkg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.MValueArrayStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.MValueArrayStorage.html",
+          "hash": "6iFu3Koqyxt96X8/GsTGiA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.PlayerPointerArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.PlayerPointerArray.html",
+          "hash": "g7ej7wRdP1GhdwtW1VBmHQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.StringArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.StringArray.html",
+          "hash": "JfbZZkPGklCpwLJ+3uA47g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.StringStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.StringStorage.html",
+          "hash": "eDHdDojlNXwvalAyopLZ1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.StringView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.StringView.html",
+          "hash": "pcxb0w70xxrL3mApAhAXzw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.StringViewArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.StringViewArray.html",
+          "hash": "jdPJRuhHC1+LsuMOcim+SQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.UIntArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.UIntArray.html",
+          "hash": "2P9+bqhThOl1Ne9KAVh7tg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.UIntStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.UIntStorage.html",
+          "hash": "muFRc+bnYjc5f3tkvKXjKA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.VehiclePointerArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.VehiclePointerArray.html",
+          "hash": "VIzjipMsX9mkWS2KE7r3bQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Native.html",
+          "hash": "ZPpL6By2DpDYJaz9WH0K0g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NativeResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NativeResource.html",
+          "hash": "OY0ZBBUK6if05yTyx+aSnQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Networking.Example.NonePlayerAuthenticationProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Networking.Example.NonePlayerAuthenticationProvider.html",
+          "hash": "gpoyjCK9UURlXDRnVaNwHw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Networking.Example.NonePlayerAuthenticationProviderFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Networking.Example.NonePlayerAuthenticationProviderFactory.html",
+          "hash": "nIEQNi0CCbRDosuUleDy4w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Networking.Example.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Networking.Example.html",
+          "hash": "BKgQEf65lABOdRAld2drnw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.AltNetworking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.AltNetworking.html",
+          "hash": "Vrk+U45BM1VUhJ+atldZkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.ClientDataSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.ClientDataSnapshot.html",
+          "hash": "2M8zXKvcqLeADbx29EvWfA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.ClientEntityStreamingHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.ClientEntityStreamingHandler.html",
+          "hash": "Gd9U0ZbVcmtK0lzBCOx1dA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.ClientEntityStreamingHandlerFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.ClientEntityStreamingHandlerFactory.html",
+          "hash": "JT3xgkLvJI5vaozMj7en3A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.DataSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.DataSnapshot.html",
+          "hash": "6OHjvk05JG39FoqjjBaSqw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.IInternalNetworkingClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.IInternalNetworkingClient.html",
+          "hash": "Aa0E6t+OWm36W5hQg3A3Pw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.IInternalNetworkingEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.IInternalNetworkingEntity.html",
+          "hash": "Ijb3fvw8mdC/aeu1xT3vAg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.INetworkingClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.INetworkingClient.html",
+          "hash": "ICD81HM/W+QgBavMClcceg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.INetworkingEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.INetworkingEntity.html",
+          "hash": "1PkmtSCVVbDphlq5d8L8ng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.NetworkingClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.NetworkingClient.html",
+          "hash": "CekD3hnHpn7PKrSXRLP7XA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.NetworkingEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.NetworkingEntity.html",
+          "hash": "pfihmNESfbX7n2IoZSC/nw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Entities.html",
+          "hash": "ycjF0SjMbKi7GznIBLBu3w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.AuthenticationProviderFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.AuthenticationProviderFactory.html",
+          "hash": "Urgy49ux+LFR408VOZnKKQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.IAuthenticationProviderFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.IAuthenticationProviderFactory.html",
+          "hash": "T8QmP9pkOm4tb+rtV4bp8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.INetworkingClientFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.INetworkingClientFactory.html",
+          "hash": "IPkiaC1j5OdfrzJhLh8rvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.INetworkingEntityFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.INetworkingEntityFactory.html",
+          "hash": "EysarpWTsINUM8BxDQDvMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.NetworkingClientFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.NetworkingClientFactory.html",
+          "hash": "zFDgcj/0+nPpCpactEifcA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.NetworkingEntityFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.NetworkingEntityFactory.html",
+          "hash": "beWdsT8CfRvgOfnu9H9XQw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Factories.html",
+          "hash": "xlhpU6j5f0D832O9Nrnemw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Pools.INetworkingClientPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Pools.INetworkingClientPool.html",
+          "hash": "2je5Vc4g24f8BIHLUO6d9A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Pools.INetworkingEntityPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Pools.INetworkingEntityPool.html",
+          "hash": "YeHAWKfyI3a/7moIbqhwNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Pools.NetworkingClientPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Pools.NetworkingClientPool.html",
+          "hash": "VntyoL0HdAIXk1UmKaLEDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Pools.NetworkingEntityPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Pools.NetworkingEntityPool.html",
+          "hash": "gY2aEw+6o43OXCp1QlE1hg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Pools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Pools.html",
+          "hash": "k5t5VXKYAya/2SjQw0EkVw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.AuthenticationProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.AuthenticationProvider.html",
+          "hash": "QFnf6IDB54JFUqAx8v67PA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.ClientTokenProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.ClientTokenProvider.html",
+          "hash": "W36mIu3HdE9Lq4IiY/L9fA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.IAuthenticationProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.IAuthenticationProvider.html",
+          "hash": "+T3V9SbrObE7Tdtjmkn8uA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.IIdProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.IIdProvider-1.html",
+          "hash": "8UhsuKyEqVPMBLc32BArOQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.IdProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.IdProvider.html",
+          "hash": "bMYehfZWuxykaGciGlkL4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Elements.Providers.html",
+          "hash": "89KLG+AOV4KOBvEMqf1PJQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.EntityDataSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.EntityDataSnapshot.html",
+          "hash": "B/ym4btgbwryH+DDclzubQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.EntityStreamer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.EntityStreamer.html",
+          "hash": "ispiXdp5/wVohslI6wzWRg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.IEntityStreamer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.IEntityStreamer.html",
+          "hash": "UlTtmqmKpEd+JbhYr2KUaA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.IStreamingHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.IStreamingHandler.html",
+          "hash": "EKX/2ZyzIKYxi0cZV/DVLw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.IStreamingHandlerFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.IStreamingHandlerFactory.html",
+          "hash": "8f4epEzlzL75X1az/0Y3gQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.MValueUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.MValueUtils.html",
+          "hash": "U/uVmQgrA3wgLXDqmZIfEw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.NetworkingEntityModuleOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.NetworkingEntityModuleOptions.html",
+          "hash": "lTKPDmawLV6281Jylcph9A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.NetworkingModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.NetworkingModule.html",
+          "hash": "0z9A6hzY7N+hRcgkatrc6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.PlayerClientExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.PlayerClientExtension.html",
+          "hash": "uD9+u9ddd7jtbii3ceBdzw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.Server.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.Server.html",
+          "hash": "SuCzPiaSvtdgjCqR06c5ag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.StreamingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.StreamingType.html",
+          "hash": "n+as0eXG5rtS3HpPyg0cRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.NetworkingEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.NetworkingEntity.html",
+          "hash": "GpJ/e2M5Is42S3gsjNDATw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Resource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Resource.html",
+          "hash": "bFlIJq4SUWbuObhvlipDgQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ResourceLoaders.AssemblyLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ResourceLoaders.AssemblyLoader.html",
+          "hash": "caQKCVCWlRuATsgOY7D15Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ResourceLoaders.ScriptLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ResourceLoaders.ScriptLoader.html",
+          "hash": "9hRln+gxjoUD4qp5LPjsOw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ResourceLoaders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ResourceLoaders.html",
+          "hash": "UuXnkiDOKlG+b9BDd4OPUw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ResourceState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ResourceState.html",
+          "hash": "IVxfal48L+HORI7OC4t2Bg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ScriptEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ScriptEvent.html",
+          "hash": "/MIAmLqsxSKmFght7jr+Hw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ScriptEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ScriptEventType.html",
+          "hash": "89gBOYG9gcEjeBlnalbyxw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.Server.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.Server.html",
+          "hash": "YBUH+837w6a1x3kQv3ZKDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.ServerNativeResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.ServerNativeResource.html",
+          "hash": "npc86G2xflSZDxXFhnJN5g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AltV.Net.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AltV.Net.html",
+          "hash": "2U7xY5OZH4Q7vyG89wRc9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "2zD1fjCaXNCSdrqI7g5rXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "15BBtkUIos2lzkvloJ9ePQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "bXaUi0i9MllaJ97eaG1NlQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "bmgrnIiRfKWUMmYQFpfQBQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "k+/dkjFuwAVS32HduMpmBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 324,
+          "skipped_file_count": 324
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

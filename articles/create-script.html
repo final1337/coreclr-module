@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate PlayerClientCustomEventDelegate
-   </title>
+    <title>Create Script </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delegate PlayerClientCustomEventDelegate
-   ">
+    <meta name="title" content="Create Script ">
     <meta name="generator" content="docfx 2.45.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,46 +66,46 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AltV.Net.Events.PlayerClientCustomEventDelegate">
-  
-  
-  <h1 id="AltV_Net_Events_PlayerClientCustomEventDelegate" data-uid="AltV.Net.Events.PlayerClientCustomEventDelegate" class="text-break">Delegate PlayerClientCustomEventDelegate
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Events.html">AltV.Net.Events</a></h6>
-  <h6><strong>Assembly</strong>: AltV.Net.dll</h6>
-  <h5 id="AltV_Net_Events_PlayerClientCustomEventDelegate_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void PlayerClientCustomEventDelegate(IPlayer player, string eventName, ref MValueArray mValueArray);</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
-        <td><span class="parametername">player</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">eventName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Native.MValueArray.html">MValueArray</a></td>
-        <td><span class="parametername">mValueArray</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="create-script">Create Script</h1>
+
+<p>Make sure you have <a href="https://fabianterhorst.github.io/coreclr-module/articles/create-resource.html">created a resource</a> before.</p>
+<p>Classes that extend IScript are getting auto initiaized.</p>
+<p>MyScript.cs</p>
+<pre><code class="lang-csharp">using System;
+
+namespace My.Package
+{
+    public class MyScript : IScript
+    {
+    }
+}
+</code></pre>
+<p>Scripts can register event handlers via method attributes.</p>
+<p>For adding a player connect handler. The method name doesn't matter for script events.</p>
+<pre><code class="lang-csharp">[ScriptEvent(ScriptEventType.PlayerConnect)]
+public void PlayerConnect(IPlayer player, string reason)
+{
+  player.SetDateTime(DateTime.Now);
+  player.Model = (uint) PedModel.FreemodeMale01;
+}
+</code></pre>
+<p>For adding a custom event handler. The method name is used as a event name when its not defined in the attribute.</p>
+<pre><code class="lang-csharp">// Here the event name is 'MyEventName'
+[Event(&quot;MyEventName&quot;)]
+public static void MyEventName2(string message)
+{
+  Console.WriteLine(message);
+}
+
+// Here the event name is 'MyCustomEvent'
+[Event]
+public static void MyCustomEvent(string message)
+{
+  Console.WriteLine(message);
+}
+</code></pre>
+<p>The ScriptEvent method signatures are the same as the signatures used when registering the events via Alt.OnPlayerConnect ect.</p>
 </article>
           </div>
           
@@ -116,10 +114,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/new/6d5ccb72ebce728fa89b9d6256fc30fb37a7b060/apiSpec/new?filename=AltV_Net_Events_PlayerClientCustomEventDelegate.md&amp;value=---%0Auid%3A%20AltV.Net.Events.PlayerClientCustomEventDelegate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/6d5ccb72ebce728fa89b9d6256fc30fb37a7b060/api/AltV.Net/Events/Events.cs/#L26" class="contribution-link">View Source</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/6d5ccb72ebce728fa89b9d6256fc30fb37a7b060/docs/articles/create-script.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

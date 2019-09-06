@@ -140,6 +140,19 @@ main: &quot;YourProject.dll&quot;
 &quot;{YourResourceName}&quot;
 ]
 </code></pre>
+<p>Your server folder now look similar to this one</p>
+<pre><code>modules/
+└── csharp-module.dll
+resources/
+└── my-example-csharp-resource/
+    ├── Alt.Net.Example.dll
+    ├── resource.cfg
+    └── ... (any .dll dependency like &quot;AltV.Net.dll&quot;, &quot;mysql.dll&quot;, ...)
+AltV.Net.Host.dll
+AltV.Net.Host.runtimeconfig.json
+server.cfg
+altv-server.exe
+</code></pre>
 <p>For creating scripts that can be created multiple times see: <a href="https://fabianterhorst.github.io/coreclr-module/articles/create-script.html">Create script</a>.</p>
 </article>
           </div>
@@ -149,7 +162,7 @@ main: &quot;YourProject.dll&quot;
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d29c5a28567e69d48b738232d0b12d04c5fd7b96/docs/articles/create-resource.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/160f56fc081234fb13c3feaf0f6a41c88e5d3da4/docs/articles/create-resource.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

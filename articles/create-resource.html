@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate PlayerEnterVehicleDelegate
-   </title>
+    <title>Create Resource </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delegate PlayerEnterVehicleDelegate
-   ">
+    <meta name="title" content="Create Resource ">
     <meta name="generator" content="docfx 2.45.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,46 +66,69 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AltV.Net.Events.PlayerEnterVehicleDelegate">
-  
-  
-  <h1 id="AltV_Net_Events_PlayerEnterVehicleDelegate" data-uid="AltV.Net.Events.PlayerEnterVehicleDelegate" class="text-break">Delegate PlayerEnterVehicleDelegate
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Events.html">AltV.Net.Events</a></h6>
-  <h6><strong>Assembly</strong>: AltV.Net.dll</h6>
-  <h5 id="AltV_Net_Events_PlayerEnterVehicleDelegate_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void PlayerEnterVehicleDelegate(IVehicle vehicle, IPlayer player, byte seat);</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
-        <td><span class="parametername">vehicle</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
-        <td><span class="parametername">player</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Byte</span></td>
-        <td><span class="parametername">seat</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="create-resource">Create Resource</h1>
+
+<h2 id="create-a-project-with-visual-studio-19-windows">Create a project with Visual Studio 19 (Windows)</h2>
+<ul>
+<li>Go to &quot;File -&gt; New -&gt; Project...&quot; now the Project Wizard should appear.</li>
+<li>In the left Column select &quot;Installed -&gt; Visual C# -&gt; .NET Core&quot;.</li>
+<li>Now select &quot;Class Library (.NET Core)&quot; and choose &quot;Name&quot;, &quot;Location&quot; and the &quot;Solution name&quot;.</li>
+<li>To setup the correct NuGet Packages open the Manager under &quot;Tools -&gt; NuGet Package Manager -&gt; Manage NuGet Packages for Solution...&quot;</li>
+<li>Select Browse and search for AltV.Net and install the packages &quot;AltV.Net&quot;, (&quot;AltV.Net.Async&quot; when you need async thread save api access)</li>
+<li>Now go to &quot;Project -&gt; {Your Project Name} Properties... -&gt; Build&quot;, here you can select the Output path where the dll should be saved.</li>
+</ul>
+<p>To get the Resource running on the server, you have to create a &quot;resource.cfg&quot; file. Copy the resource.cfg, AltV.Net.dll and all other dependencied with your resource dll file to altv-server/resources/{YourResourceName}/.</p>
+<p>Boilerplate YourProject.csproj:</p>
+<pre><code>&lt;Project Sdk=&quot;Microsoft.NET.Sdk&quot;&gt;
+
+    &lt;PropertyGroup&gt;
+        &lt;TargetFramework&gt;netcoreapp3.0&lt;/TargetFramework&gt;
+    &lt;/PropertyGroup&gt;
+
+    &lt;ItemGroup&gt;
+      &lt;!--Use latest version from https://www.nuget.org/packages/AltV.Net--&gt;
+      &lt;PackageReference Include=&quot;AltV.Net&quot; Version=&quot;1.13.0&quot; /&gt;
+    &lt;/ItemGroup&gt;
+    
+    &lt;!--This copies the publish directory to the resource folder which is named &quot;my-server&quot;--&gt;
+    
+    &lt;ItemGroup&gt;
+        &lt;AllOutputFiles Include=&quot;$(OutputPath)\publish\*.*&quot; /&gt;
+    &lt;/ItemGroup&gt;
+
+    &lt;Target Name=&quot;CopyFiles&quot; AfterTargets=&quot;publish&quot;&gt;
+        &lt;PropertyGroup&gt;
+            &lt;CopiedFiles&gt;$(OutputPath)\publish\*.*&lt;/CopiedFiles&gt;
+
+            &lt;TargetLocation Condition=&quot; '$(Configuration)' == 'Release' &quot;&gt;../../my-server/&lt;/TargetLocation&gt;
+        &lt;/PropertyGroup&gt;
+        &lt;Copy Condition=&quot; '$(TargetLocation)' != '' &quot; SourceFiles=&quot;@(AllOutputFiles)&quot; DestinationFolder=&quot;$(TargetLocation)&quot; SkipUnchangedFiles=&quot;false&quot; /&gt;
+    &lt;/Target&gt;
+
+&lt;/Project&gt;
+</code></pre>
+<p>You now have to create a single resource file in your project that is auto initialized on server startup.</p>
+<p>MyResource.cs</p>
+<pre><code class="lang-csharp">using System;
+
+namespace My.Package
+{
+    internal class MyResource : Resource
+    {
+        public override void OnStart()
+        {
+            Console.WriteLine(&quot;Started&quot;);
+        }
+
+        public override void OnStop()
+        {
+            Console.WriteLine(&quot;Stopped&quot;);
+        }
+    }
+}
+</code></pre>
+<p>For creating scripts that can be created multiple times see: <a href="https://fabianterhorst.github.io/coreclr-module/articles/create-script.html">Create script</a>.</p>
 </article>
           </div>
           
@@ -116,10 +137,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/new/b2e8faf78da1a5a58636895e38964c7bb40b89dd/apiSpec/new?filename=AltV_Net_Events_PlayerEnterVehicleDelegate.md&amp;value=---%0Auid%3A%20AltV.Net.Events.PlayerEnterVehicleDelegate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/b2e8faf78da1a5a58636895e38964c7bb40b89dd/api/AltV.Net/Events/Events.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/b2e8faf78da1a5a58636895e38964c7bb40b89dd/docs/articles/create-resource.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

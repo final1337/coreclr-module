@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum VehiclePartDamage
-   </title>
+    <title>Custom events </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum VehiclePartDamage
-   ">
+    <meta name="title" content="Custom events ">
     <meta name="generator" content="docfx 2.45.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,47 +66,42 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AltV.Net.Enums.VehiclePartDamage">
-  
-  
-  <h1 id="AltV_Net_Enums_VehiclePartDamage" data-uid="AltV.Net.Enums.VehiclePartDamage" class="text-break">Enum VehiclePartDamage
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Enums.html">AltV.Net.Enums</a></h6>
-  <h6><strong>Assembly</strong>: AltV.Net.dll</h6>
-  <h5 id="AltV_Net_Enums_VehiclePartDamage_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum VehiclePartDamage : byte</code></pre>
-  </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="AltV_Net_Enums_VehiclePartDamage_DamagedLevel1">DamagedLevel1</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AltV_Net_Enums_VehiclePartDamage_DamagedLevel2">DamagedLevel2</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AltV_Net_Enums_VehiclePartDamage_DamagedLevel3">DamagedLevel3</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AltV_Net_Enums_VehiclePartDamage_NotDamaged">NotDamaged</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="custom-events">Custom events</h1>
+
+<p>Custom events are automatically validating the arguments the client send via a client event. Everything that is possible with custom events can also be created via <code>Alt.OnPlayerEvent</code>.</p>
+<p>Custom events are registered via <code>Alt.On(eventName, delegate)</code>. The delegate can have any signature and the module checks when a event occurs if the signature of the delegate fits the event arguments the client sends.</p>
+<p>For custom events you can't use the lambda operator because it needs to know the parameter types.</p>
+<p>Here is a very basic sample that expects just a single <code>string</code> from a client event named <code>myMessage</code>.</p>
+<p>We register it via <code>Alt.On</code>. We need to help the compiler a bit by defining the method parameter types for the generic method. The types are defined from left ro right same as in the method definition itself.</p>
+<pre><code class="lang-csharp">Alt.On&lt;IPlayer, string&gt;(&quot;myMessage&quot;, MyMessageHandler);
+</code></pre>
+<p>And the method is defined as this.</p>
+<pre><code class="lang-csharp">public void MyMessageHandler(IPlayer player, string message)
+{            
+}
+</code></pre>
+<p>The method will be called like this from client</p>
+<pre><code class="lang-js">alt.emitServer(&quot;myMessage&quot;, &quot;my test message&quot;).
+</code></pre>
+<p>The method name doesn't really matter in this case and i just named it similar to the event name.</p>
+<p>Supported parameter types are <code>object</code>, <code>bool</code>, <code>int</code>, <code>long</code>, <code>uint</code>, <code>ulong</code>, <code>float</code>, <code>double</code>, <code>string</code>, <code>IPlayer</code> (or any types extending IPlayer), <code>IVehicle</code> (or any types extending IVehicle), <code>Dictionary&lt;string, (any type listed here)</code>, <code>Alt.Function</code>, any type listed here as array e.g. int[].
+Also any dictionary in dictionary, array in array, ect. endless depth types are supported, because they are resolved recursively.</p>
+<h2 id="dictionaries">Dictionaries</h2>
+<p>Any js object send via <code>alt.emitServer</code> will be a dictionary.</p>
+<pre><code class="lang-csharp">Alt.On&lt;IPlayer, string&gt;(&quot;myBigObject&quot;, MyBigObjectHandler);
+...
+public void MyBigObjectHandler(IPlayer player, Dictionary&lt;string, string&gt; myBigObject)
+{            
+  if(!myBigObject.TryGetValue(&quot;eyeColor&quot;, out var eyeColor)) return;
+  Console.WriteLine($&quot;EyeColor: {eyeColor}&quot;);
+}
+</code></pre>
+<p>And this is the client code.</p>
+<pre><code class="lang-js">const myBigObject = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, eyeColor:&quot;blue&quot;};
+alt.emitServer(&quot;myBigObject&quot;, myBigObject);
+</code></pre>
+<p>When you use <code>object</code> as a parameter, or type in dictionary, it will accept any type and you can manually check which type it is.</p>
 </article>
           </div>
           
@@ -117,10 +110,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/new/86fb8fdedfe35fb2018028449274c19b49e4fb53/apiSpec/new?filename=AltV_Net_Enums_VehiclePartDamage.md&amp;value=---%0Auid%3A%20AltV.Net.Enums.VehiclePartDamage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/86fb8fdedfe35fb2018028449274c19b49e4fb53/api/AltV.Net/Enums/VehiclePartDamage.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/86fb8fdedfe35fb2018028449274c19b49e4fb53/docs/articles/custom-events.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

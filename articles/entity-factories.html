@@ -108,7 +108,26 @@ This will look like the code below.</p>
 }
 </code></pre>
 <p>This also works when you extend <code>AsyncResource</code> ect.</p>
-<p>It works exactly the same for vehicles.</p>
+<h2 id="vehicle-class">Vehicle class</h2>
+<p>It works the same for vehicles, but with a small difference, because you can create vehicles via the constructor by defining the vehicle model, position and rotation.</p>
+<p>Thats why you most likely will add a second constructor to the vehicle that looks like this.</p>
+<pre><code class="lang-csharp">public class MyVehicle : Vehicle
+    {
+        public int MyData { get; set; }
+
+        // This constructor is used for creation via constructor
+        public MyVehicle(uint model, Position position, Rotation rotation) : base(model, position, rotation)
+        {
+            MyData = 7;
+        }
+
+        // This constructor is used for creation via entity factory
+        public MyVehicle(IntPtr nativePointer, ushort id) : base(nativePointer, id)
+        {
+            MyData = 6;
+        }
+}
+</code></pre>
 </article>
           </div>
           
@@ -117,7 +136,7 @@ This will look like the code below.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/ee643c8fcc0fc4ecb5de92d2ffb4af72ea9a557f/docs/articles/entity-factories.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f61521aa67f5352b9482ce34bd7aff5b586b4837/docs/articles/entity-factories.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

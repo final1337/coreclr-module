@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum ClrTraceEventParser.Keywords
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum ClrTraceEventParser.Keywords
+   ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AltV.Net.Host.ClrTraceEventParser.Keywords">
+  
+  
+  <h1 id="AltV_Net_Host_ClrTraceEventParser_Keywords" data-uid="AltV.Net.Host.ClrTraceEventParser.Keywords" class="text-break">Enum ClrTraceEventParser.Keywords
+  </h1>
+  <div class="markdown level0 summary"><p>Keywords are passed to TraceEventSession.EnableProvider to enable particular sets of</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Host.html">AltV.Net.Host</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Host.dll</h6>
+  <h5 id="AltV_Net_Host_ClrTraceEventParser_Keywords_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum Keywords : long</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_All">All</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_AppDomainResourceManagement">AppDomainResourceManagement</td>
+        <td><p>Events for logging resource consumption on an app-domain level granularity</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Binder">Binder</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Codesymbols">Codesymbols</td>
+        <td><p>Events that will dump PDBs of dynamically generated assemblies to the ETW stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_CompilationDiagnostic">CompilationDiagnostic</td>
+        <td><p>Diagnostic events for diagnosing compilation and pre-compilation features.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Contention">Contention</td>
+        <td><p>Log when lock contention occurs.  (Monitor.Enters actually blocks)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Debugger">Debugger</td>
+        <td><p>.NET Debugger events</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Default">Default</td>
+        <td><p>Recommend default flags (good compromise on verbosity).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Exception">Exception</td>
+        <td><p>Log exception processing.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_GC">GC</td>
+        <td><p>Logging when garbage collections and finalization happen.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_GCAllObjectAllocation">GCAllObjectAllocation</td>
+        <td><p>Turns on capturing the stack and type of object allocation made by the .NET Runtime.   This is only
+supported after V4.5.3 (Late 2014)   This can be very verbose and you should seriously using  GCSampledObjectAllocationHigh
+instead (and GCSampledObjectAllocationLow for production scenarios).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_GCHandle">GCHandle</td>
+        <td><p>Events when GC handles are set or destroyed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_GCHeapAndTypeNames">GCHeapAndTypeNames</td>
+        <td><p>Indicates that you want type names looked up and put into the events (not just meta-data tokens).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_GCHeapCollect">GCHeapCollect</td>
+        <td><p>Triggers a GC.  Can pass a 64 bit value that will be logged with the GC Start event so you know which GC you actually triggered.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_GCHeapDump">GCHeapDump</td>
+        <td><p>Enables the events associated with dumping the GC heap</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_GCHeapSnapshot">GCHeapSnapshot</td>
+        <td><p>This provides the flags commonly needed to take a heap .NET Heap snapshot with ETW.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_GCHeapSurvivalAndMovement">GCHeapSurvivalAndMovement</td>
+        <td><p>Enables events associate with object movement or survival with each GC.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_GCSampledObjectAllocationHigh">GCSampledObjectAllocationHigh</td>
+        <td><p>Enables allocation sampling with the 'fast'.  Sample to limit to 100 allocations per second per type.<br>
+This is good for most detailed performance investigations.   Note that this DOES update the allocation
+path to be slower and only works if the process start with this on.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_GCSampledObjectAllocationLow">GCSampledObjectAllocationLow</td>
+        <td><p>Enables allocation sampling with the 'slow' rate, Sample to limit to 5 allocations per second per type.<br>
+This is reasonable for monitoring.    Note that this DOES update the allocation path to be slower
+and only works if the process start with this on.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Interop">Interop</td>
+        <td><p>Log information about code thunks that transition between managed and unmanaged code.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Jit">Jit</td>
+        <td><p>Logging when Just in time (JIT) compilation occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_JITSymbols">JITSymbols</td>
+        <td><p>What is needed to get symbols for JIT compiled code.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_JittedMethodILToNativeMap">JittedMethodILToNativeMap</td>
+        <td><p>Dump the native to IL mapping of any method that is JIT compiled.  (V4.5 runtimes and above).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_JitTracing">JitTracing</td>
+        <td><p>Logging of the internal workings of the Just In Time compiler.  This is fairly verbose.<br>
+It details decisions about interesting optimization (like inlining and tail call)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Loader">Loader</td>
+        <td><p>Logging when modules actually get loaded and unloaded.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Monitoring">Monitoring</td>
+        <td><p>Events intended for monitoring on an ongoing basis.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_NGen">NGen</td>
+        <td><p>Logging when precompiled native (NGEN) images are loaded.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_None">None</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_OverrideAndSuppressNGenEvents">OverrideAndSuppressNGenEvents</td>
+        <td><p>If enabled will suppress the rundown of NGEN events on V4.0 runtime (has no effect on Pre-V4.0 runtimes).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_PerfTrack">PerfTrack</td>
+        <td><p>TODO document</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Security">Security</td>
+        <td><p>Events associated with validating security restrictions.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Stack">Stack</td>
+        <td><p>Also log the stack trace of events for which this is valuable.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_StartEnumeration">StartEnumeration</td>
+        <td><p>Indicates that on attach or module load , a rundown of all existing methods should be done</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_StopEnumeration">StopEnumeration</td>
+        <td><p>Indicates that on detach or process shutdown, a rundown of all existing methods should be done</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_SupressNGen">SupressNGen</td>
+        <td><p>This suppresses NGEN events on V4.0 (where you have NGEN PDBs), but not on V2.0 (which does not know about this
+bit and also does not have NGEN PDBS).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Threading">Threading</td>
+        <td><p>Log events associated with the threadpool, and other threading events.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_ThreadTransfer">ThreadTransfer</td>
+        <td><p>This allows tracing work item transfer events (thread pool enqueue/dequeue/ioenqueue/iodequeue/a.o.)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="AltV_Net_Host_ClrTraceEventParser_Keywords_Type">Type</td>
+        <td><p>Enables the 'BulkType' event</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/new/0401a3d85c9dfb20ef5f557b4b7e6973bf8949b9/apiSpec/new?filename=AltV_Net_Host_ClrTraceEventParser_Keywords.md&amp;value=---%0Auid%3A%20AltV.Net.Host.ClrTraceEventParser.Keywords%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0401a3d85c9dfb20ef5f557b4b7e6973bf8949b9/api/AltV.Net.Host/ClrTraceEventParser.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

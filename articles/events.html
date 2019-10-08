@@ -87,6 +87,7 @@ public void OnPlayerConnect(IPlayer player, string reason)
 }
 </code></pre>
 <p>You should not register event handlers in async code.</p>
+<p>Below is a list of all event handlers.</p>
 <pre><code class="lang-csharp" name="Events">using AltV.Net.Events;
 
 namespace AltV.Net
@@ -99,10 +100,38 @@ namespace AltV.Net
             remove =&gt; Module.CheckpointEventHandler.Remove(value);
         }
 
+        /// &lt;summary&gt;
+        /// Player connect event handler
+        /// &lt;example&gt;
+        /// &lt;code&gt;
+        /// Alt.OnPlayerConnect += (player, reason) =&gt; {
+        ///   Console.WriteLine($&quot;{player.Name} connected.&quot;);
+        /// };
+        /// &lt;/code&gt;
+        /// &lt;/example&gt;
+        /// &lt;/summary&gt;
         public static event PlayerConnectDelegate OnPlayerConnect
         {
             add =&gt; Module.PlayerConnectEventHandler.Add(value);
             remove =&gt; Module.PlayerConnectEventHandler.Remove(value);
+        }
+
+        public static event ResourceEventDelegate OnAnyResourceStart
+        {
+            add =&gt; Module.ResourceStartEventHandler.Add(value);
+            remove =&gt; Module.ResourceStartEventHandler.Remove(value);
+        }
+
+        public static event ResourceEventDelegate OnAnyResourceStop
+        {
+            add =&gt; Module.ResourceStopEventHandler.Add(value);
+            remove =&gt; Module.ResourceStopEventHandler.Remove(value);
+        }
+
+        public static event ResourceEventDelegate OnAnyResourceError
+        {
+            add =&gt; Module.ResourceErrorEventHandler.Add(value);
+            remove =&gt; Module.ResourceErrorEventHandler.Remove(value);
         }
 
         public static event PlayerDamageDelegate OnPlayerDamage
@@ -115,6 +144,18 @@ namespace AltV.Net
         {
             add =&gt; Module.PlayerDeadEventHandler.Add(value);
             remove =&gt; Module.PlayerDeadEventHandler.Remove(value);
+        }
+
+        public static event ExplosionDelegate OnExplosion
+        {
+            add =&gt; Module.ExplosionEventHandler.Add(value);
+            remove =&gt; Module.ExplosionEventHandler.Remove(value);
+        }
+
+        public static event WeaponDamageDelegate OnWeaponDamage
+        {
+            add =&gt; Module.WeaponDamageEventHandler.Add(value);
+            remove =&gt; Module.WeaponDamageEventHandler.Remove(value);
         }
 
         public static event PlayerDisconnectDelegate OnPlayerDisconnect
@@ -203,12 +244,60 @@ namespace AltV.Net
     }
 }
 </code></pre>
-<p>For a list of all event handlers see <a href="https://github.com/FabianTerhorst/coreclr-module/blob/master/api/AltV.Net/Alt.Events.cs">Alt.Events.cs</a>.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>It looks like the sample you are looking for does not exist.</p>
-</div>
-<p>And the method signatures can be found in <a href="https://github.com/FabianTerhorst/coreclr-module/blob/master/api/AltV.Net/Events/Events.cs">Events.cs</a>.</p>
+<p>Below is a list of all event handler method signatures.</p>
+<pre><code class="lang-csharp" name="Events">using AltV.Net.Data;
+using AltV.Net.Elements.Entities;
+using AltV.Net.Native;
+
+namespace AltV.Net.Events
+{
+    public delegate void CheckpointDelegate(ICheckpoint checkpoint, IEntity entity, bool state);
+
+    public delegate void ClientEventDelegate(IPlayer player, object[] args);
+
+    public delegate void PlayerConnectDelegate(IPlayer player, string reason);
+    
+    public delegate void ResourceEventDelegate(INativeResource resource);
+
+    public delegate void PlayerDamageDelegate(IPlayer player, IEntity attacker, uint weapon, ushort damage);
+
+    public delegate void PlayerDeadDelegate(IPlayer player, IEntity killer, uint weapon);
+
+    public delegate void PlayerDisconnectDelegate(IPlayer player, string reason);
+
+    public delegate void PlayerRemoveDelegate(IPlayer player);
+
+    public delegate void VehicleRemoveDelegate(IVehicle vehicle);
+
+    public delegate void ServerEventDelegate(object[] args);
+
+    public delegate void PlayerClientEventDelegate(IPlayer player, string eventName, object[] args);
+
+    public delegate void PlayerClientCustomEventDelegate(IPlayer player, string eventName, ref MValueArray mValueArray);
+
+    public delegate void PlayerChangeVehicleSeatDelegate(IVehicle vehicle, IPlayer player, byte oldSeat, byte newSeat);
+
+    public delegate void PlayerEnterVehicleDelegate(IVehicle vehicle, IPlayer player, byte seat);
+
+    public delegate void PlayerLeaveVehicleDelegate(IVehicle vehicle, IPlayer player, byte seat);
+
+    public delegate void ServerEventEventDelegate(string eventName, object[] args);
+
+    public delegate void ServerCustomEventEventDelegate(string eventName, ref MValueArray mValueArray);
+
+    public delegate void ConsoleCommandDelegate(string name, string[] args);
+
+    public delegate void MetaDataChangeDelegate(IEntity entity, string key, object value);
+
+    public delegate void ColShapeDelegate(IColShape colShape, IEntity targetEntity, bool state);
+
+    public delegate void ExplosionDelegate(IPlayer player, ExplosionType explosionType, Position position,
+        uint explosionFx);
+
+    public delegate void WeaponDamageDelegate(IPlayer player, IEntity target, uint weapon, ushort damage,
+        Position shotOffset, BodyPart bodyPart);
+}
+</code></pre>
 <p>The player event handler looks like this.</p>
 <pre><code class="lang-csharp">Alt.OnPlayerEvent += (player, name, args) =&gt; { 
 };
@@ -222,7 +311,7 @@ namespace AltV.Net
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1b456294e050556569c003873b2ea8b636d2cf71/docs/articles/events.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0401a3d85c9dfb20ef5f557b4b7e6973bf8949b9/docs/articles/events.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

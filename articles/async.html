@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Async Module </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Async Module ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="async-module">Async Module</h1>
+
+<p>This article will talk about how to use altv's thread safe.
+All techniques described in this article will only work when you extend AsyncResource.</p>
+<h2 id="setup-async-module">Setup async module</h2>
+<p>First download the nuget package to access the async api's. <a href="https://www.nuget.org/packages/AltV.Net.Async">https://www.nuget.org/packages/AltV.Net.Async</a>
+Next you need to inherit from <code>AsyncResource</code> instead of <code>Resource</code>.
+Now you can use the async module.</p>
+<h2 id="async-event-handlers">Async event handlers</h2>
+<p>You can register a async event handler when using AltAsync instead of Alt for registering event handlers like</p>
+<pre><code class="lang-csharp">AltAsync.OnPlayerConnect += async (player, reason) =&gt; {
+  Console.WriteLine($&quot;{player.Name} connected.&quot;);
+  await DoAsyncStuff(player);
+};
+</code></pre>
+<h2 id="use-apis-thread-safe">Use apis thread safe</h2>
+<p>All api's related to entities like Player, Vehicle, Blip, ColShape, Checkpoint, VoiceChannel are not thread safe and will make your server crash when used wrong in async code.</p>
+<h3 id="how-to-use-most-apis-thread-safe-without-performance-loose">How to use most apis thread safe without performance loose?</h3>
+<p>You can get the position of a player in async code by preventing the player entity to get deleted while accessing the position.
+This doesn't work with all apis</p>
+<p>Small example:</p>
+<pre><code class="lang-csharp">Position position;
+lock (player) {
+  if (player.Exists) {
+    position = player.Position
+  }
+}
+Console.WriteLine(&quot;X:&quot; + position.X);
+</code></pre>
+<p>Lets breakdown the small code snippet.</p>
+<p><code>Position position;</code>
+We create a value to save the position into;
+<code>lock (player)</code>
+We lock the player to prevent access to it from multiple c# threads at the same time.
+This also prevents the c# module to delete the player on disconnect.
+Otherwise the server would end up crashing by accessing the player position of a deleted entity.
+Note: locking the player when its already locked will end up in a deadlock. Never do this E.g. <code>lock (player) { lock (player) { } }</code>
+Locks also work accross method calls so be careful.
+<code>if (player.Exists) {</code>
+This if check is optional, because not checking it won't crash the server, but will throw a exception when the player doesn't esists anymore.
+<code>position = player.Position</code>
+Here we assign the position to the value we declared above. This is essential because no heavy calculations should happen inside a lock statement and the assign makes it possible to use the player position outside the lock statement for e.g. distance calculatione.</p>
+<h3 id="how-to-use-all-apis-thread-safe">How to use all apis thread safe</h3>
+<p>A few apis aren't possible to use thread safe from a different thread.
+To use those apis we have to execute them on main thread. To make this easy for serverdev AltAsync has a method to do just this.</p>
+<p>Here is a example.</p>
+<pre><code class="lang-csharp">var vehicle = await AltAsync.Do(() =&gt; Alt.CreateVehicle(VehicleModel.T20, player.Position, player.Rotation));
+</code></pre>
+<p>This example only works when called inside a method that is declared async.
+AltAsync.Do will execute any code inside of it on the main thread. And will return the result when its awaited. You can also use AltAsync.Do when you don't care about the result and about the execution order.</p>
+<p>When you need to call multiple apis at once don't do multiple AltAsync.Do when possible. Otherwise it may create a overhead on the main thread.</p>
+<pre><code class="lang-csharp">var vehicle = await AltAsync.Do(() =&gt; {
+  var vehicle = Alt.CreateVehicle(VehicleModel.T20, player.Position, player.Rotation);
+  var vehicle2 = Alt.CreateVehicle(VehicleModel.Chimera, player.Position, player.Rotation);
+});
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/28f1f632a5260b807c46cf5474228c02a62feea6/docs/articles/async.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

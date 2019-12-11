@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface ICheckpoint
    ">
-    <meta name="generator" content="docfx 2.47.0.0">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -78,6 +78,21 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IColShape.html#AltV_Net_Elements_Entities_IColShape_ColShapeType">IColShape.ColShapeType</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IColShape.html#AltV_Net_Elements_Entities_IColShape_IsEntityIn_AltV_Net_Elements_Entities_IEntity_">IColShape.IsEntityIn(IEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IColShape.html#AltV_Net_Elements_Entities_IColShape_IsPlayerIn_AltV_Net_Elements_Entities_IPlayer_">IColShape.IsPlayerIn(IPlayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IColShape.html#AltV_Net_Elements_Entities_IColShape_IsVehicleIn_AltV_Net_Elements_Entities_IVehicle_">IColShape.IsVehicleIn(IVehicle)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IColShape.html#AltV_Net_Elements_Entities_IColShape_Remove">IColShape.Remove()</a>
+    </div>
+    <div>
       <a class="xref" href="AltV.Net.Elements.Entities.IWorldObject.html#AltV_Net_Elements_Entities_IWorldObject_Position">IWorldObject.Position</a>
     </div>
     <div>
@@ -99,10 +114,10 @@
       <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_GetMetaData__1_System_String___0__">IBaseObject.GetMetaData&lt;T&gt;(String, T)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValue__">IBaseObject.SetMetaData(String, MValue)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">IBaseObject.SetMetaData(String, MValueConst)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValue__">IBaseObject.GetMetaData(String, MValue)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">IBaseObject.GetMetaData(String, MValueConst)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_SetData_System_String_System_Object_">IBaseObject.SetData(String, Object)</a>
@@ -116,21 +131,27 @@
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_OnRemove">IBaseObject.OnRemove()</a>
     </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_AddRef">IBaseObject.AddRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_RemoveRef">IBaseObject.RemoveRef()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Elements.Entities.html">AltV.Net.Elements.Entities</a></h6>
   <h6><strong>Assembly</strong>: AltV.Net.dll</h6>
   <h5 id="AltV_Net_Elements_Entities_ICheckpoint_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ICheckpoint : IWorldObject, IBaseObject</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ICheckpoint : IColShape, IWorldObject, IBaseObject</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_CheckpointType.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.CheckpointType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_CheckpointType.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.CheckpointType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L15">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L10">View Source</a>
   </span>
   <a id="AltV_Net_Elements_Entities_ICheckpoint_CheckpointType_" data-uid="AltV.Net.Elements.Entities.ICheckpoint.CheckpointType*"></a>
   <h4 id="AltV_Net_Elements_Entities_ICheckpoint_CheckpointType" data-uid="AltV.Net.Elements.Entities.ICheckpoint.CheckpointType">CheckpointType</h4>
@@ -158,10 +179,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_Color.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.Color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_Color.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.Color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L30">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L25">View Source</a>
   </span>
   <a id="AltV_Net_Elements_Entities_ICheckpoint_Color_" data-uid="AltV.Net.Elements.Entities.ICheckpoint.Color*"></a>
   <h4 id="AltV_Net_Elements_Entities_ICheckpoint_Color" data-uid="AltV.Net.Elements.Entities.ICheckpoint.Color">Color</h4>
@@ -189,10 +210,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_Height.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_Height.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L20">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L15">View Source</a>
   </span>
   <a id="AltV_Net_Elements_Entities_ICheckpoint_Height_" data-uid="AltV.Net.Elements.Entities.ICheckpoint.Height*"></a>
   <h4 id="AltV_Net_Elements_Entities_ICheckpoint_Height" data-uid="AltV.Net.Elements.Entities.ICheckpoint.Height">Height</h4>
@@ -220,41 +241,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_IsGlobal.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.IsGlobal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_Radius.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.Radius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L10">View Source</a>
-  </span>
-  <a id="AltV_Net_Elements_Entities_ICheckpoint_IsGlobal_" data-uid="AltV.Net.Elements.Entities.ICheckpoint.IsGlobal*"></a>
-  <h4 id="AltV_Net_Elements_Entities_ICheckpoint_IsGlobal" data-uid="AltV.Net.Elements.Entities.ICheckpoint.IsGlobal">IsGlobal</h4>
-  <div class="markdown level1 summary"><p>Gets whether the checkpoint is global</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsGlobal { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_Radius.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.Radius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L25">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L20">View Source</a>
   </span>
   <a id="AltV_Net_Elements_Entities_ICheckpoint_Radius_" data-uid="AltV.Net.Elements.Entities.ICheckpoint.Radius*"></a>
   <h4 id="AltV_Net_Elements_Entities_ICheckpoint_Radius" data-uid="AltV.Net.Elements.Entities.ICheckpoint.Radius">Radius</h4>
@@ -280,185 +270,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_Target.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.Target%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L35">View Source</a>
-  </span>
-  <a id="AltV_Net_Elements_Entities_ICheckpoint_Target_" data-uid="AltV.Net.Elements.Entities.ICheckpoint.Target*"></a>
-  <h4 id="AltV_Net_Elements_Entities_ICheckpoint_Target" data-uid="AltV.Net.Elements.Entities.ICheckpoint.Target">Target</h4>
-  <div class="markdown level1 summary"><p>Returns the player for whom the checkpoint is visible</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IPlayer Target { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_IsPlayerIn_AltV_Net_Elements_Entities_IPlayer_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.IsPlayerIn(AltV.Net.Elements.Entities.IPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L42">View Source</a>
-  </span>
-  <a id="AltV_Net_Elements_Entities_ICheckpoint_IsPlayerIn_" data-uid="AltV.Net.Elements.Entities.ICheckpoint.IsPlayerIn*"></a>
-  <h4 id="AltV_Net_Elements_Entities_ICheckpoint_IsPlayerIn_AltV_Net_Elements_Entities_IPlayer_" data-uid="AltV.Net.Elements.Entities.ICheckpoint.IsPlayerIn(AltV.Net.Elements.Entities.IPlayer)">IsPlayerIn(IPlayer)</h4>
-  <div class="markdown level1 summary"><p>Returns if the player is inside the checkpoint</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsPlayerIn(IPlayer player)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
-        <td><span class="parametername">player</span></td>
-        <td><p>The player</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
-        <td><p>This entity was removed</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_IsVehicleIn_AltV_Net_Elements_Entities_IVehicle_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.IsVehicleIn(AltV.Net.Elements.Entities.IVehicle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L49">View Source</a>
-  </span>
-  <a id="AltV_Net_Elements_Entities_ICheckpoint_IsVehicleIn_" data-uid="AltV.Net.Elements.Entities.ICheckpoint.IsVehicleIn*"></a>
-  <h4 id="AltV_Net_Elements_Entities_ICheckpoint_IsVehicleIn_AltV_Net_Elements_Entities_IVehicle_" data-uid="AltV.Net.Elements.Entities.ICheckpoint.IsVehicleIn(AltV.Net.Elements.Entities.IVehicle)">IsVehicleIn(IVehicle)</h4>
-  <div class="markdown level1 summary"><p>Returns if the vehicle is inside the checkpoint</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsVehicleIn(IVehicle vehicle)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
-        <td><span class="parametername">vehicle</span></td>
-        <td><p>The vehicle</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
-        <td><p>This entity was removed</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint_Remove.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint.Remove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L54">View Source</a>
-  </span>
-  <a id="AltV_Net_Elements_Entities_ICheckpoint_Remove_" data-uid="AltV.Net.Elements.Entities.ICheckpoint.Remove*"></a>
-  <h4 id="AltV_Net_Elements_Entities_ICheckpoint_Remove" data-uid="AltV.Net.Elements.Entities.ICheckpoint.Remove">Remove()</h4>
-  <div class="markdown level1 summary"><p>Removes the checkpoint</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Remove()</code></pre>
-  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_ExistsAsync_AltV_Net_Elements_Entities_IBaseObject_">AltAsync.ExistsAsync(IBaseObject)</a>
@@ -473,9 +284,6 @@
       <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_GetMetaDataAsync__1_AltV_Net_Elements_Entities_IBaseObject_System_String_">AltAsync.GetMetaDataAsync&lt;T&gt;(IBaseObject, String)</a>
   </div>
   <div>
-      <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_IsGlobalAsync_AltV_Net_Elements_Entities_ICheckpoint_">AltAsync.IsGlobalAsync(ICheckpoint)</a>
-  </div>
-  <div>
       <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_GetCheckpointTypeAsync_AltV_Net_Elements_Entities_ICheckpoint_">AltAsync.GetCheckpointTypeAsync(ICheckpoint)</a>
   </div>
   <div>
@@ -486,9 +294,6 @@
   </div>
   <div>
       <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_GetColorAsync_AltV_Net_Elements_Entities_ICheckpoint_">AltAsync.GetColorAsync(ICheckpoint)</a>
-  </div>
-  <div>
-      <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_GetTargetAsync_AltV_Net_Elements_Entities_ICheckpoint_">AltAsync.GetTargetAsync(ICheckpoint)</a>
   </div>
   <div>
       <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_IsPlayerInAsync_AltV_Net_Elements_Entities_ICheckpoint_AltV_Net_Elements_Entities_IPlayer_">AltAsync.IsPlayerInAsync(ICheckpoint, IPlayer)</a>
@@ -564,10 +369,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/new/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/apiSpec/new?filename=AltV_Net_Elements_Entities_ICheckpoint.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.ICheckpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L5" class="contribution-link">View Source</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/api/AltV.Net/Elements/Entities/ICheckpoint.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

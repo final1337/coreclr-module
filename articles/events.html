@@ -8,7 +8,7 @@
     <title>Events </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Events ">
-    <meta name="generator" content="docfx 2.47.0.0">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -246,6 +246,7 @@ namespace AltV.Net
 </code></pre>
 <p>Below is a list of all event handler method signatures.</p>
 <pre><code class="lang-csharp" name="Events">using AltV.Net.Data;
+using AltV.Net.Elements.Args;
 using AltV.Net.Elements.Entities;
 using AltV.Net.Native;
 
@@ -273,7 +274,7 @@ namespace AltV.Net.Events
 
     public delegate void PlayerClientEventDelegate(IPlayer player, string eventName, object[] args);
 
-    public delegate void PlayerClientCustomEventDelegate(IPlayer player, string eventName, ref MValueArray mValueArray);
+    public delegate void PlayerClientCustomEventDelegate(IPlayer player, string eventName, MValueConst[] mValueArray);
 
     public delegate void PlayerChangeVehicleSeatDelegate(IVehicle vehicle, IPlayer player, byte oldSeat, byte newSeat);
 
@@ -283,7 +284,7 @@ namespace AltV.Net.Events
 
     public delegate void ServerEventEventDelegate(string eventName, object[] args);
 
-    public delegate void ServerCustomEventEventDelegate(string eventName, ref MValueArray mValueArray);
+    public delegate void ServerCustomEventEventDelegate(string eventName, MValueConst[] mValueArray);
 
     public delegate void ConsoleCommandDelegate(string name, string[] args);
 
@@ -311,7 +312,7 @@ namespace AltV.Net.Events
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/docs/articles/events.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/docs/articles/events.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

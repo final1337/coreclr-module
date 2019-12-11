@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IWorldObject
    ">
-    <meta name="generator" content="docfx 2.47.0.0">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -93,10 +93,10 @@
       <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_GetMetaData__1_System_String___0__">IBaseObject.GetMetaData&lt;T&gt;(String, T)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValue__">IBaseObject.SetMetaData(String, MValue)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">IBaseObject.SetMetaData(String, MValueConst)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValue__">IBaseObject.GetMetaData(String, MValue)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">IBaseObject.GetMetaData(String, MValueConst)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_SetData_System_String_System_Object_">IBaseObject.SetData(String, Object)</a>
@@ -110,6 +110,12 @@
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_OnRemove">IBaseObject.OnRemove()</a>
     </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_AddRef">IBaseObject.AddRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_RemoveRef">IBaseObject.RemoveRef()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Elements.Entities.html">AltV.Net.Elements.Entities</a></h6>
   <h6><strong>Assembly</strong>: AltV.Net.dll</h6>
@@ -121,10 +127,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_IWorldObject_Dimension.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IWorldObject.Dimension%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/apiSpec/new?filename=AltV_Net_Elements_Entities_IWorldObject_Dimension.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IWorldObject.Dimension%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/IWorldObject.cs/#L17">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/api/AltV.Net/Elements/Entities/IWorldObject.cs/#L17">View Source</a>
   </span>
   <a id="AltV_Net_Elements_Entities_IWorldObject_Dimension_" data-uid="AltV.Net.Elements.Entities.IWorldObject.Dimension*"></a>
   <h4 id="AltV_Net_Elements_Entities_IWorldObject_Dimension" data-uid="AltV.Net.Elements.Entities.IWorldObject.Dimension">Dimension</h4>
@@ -133,7 +139,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">short Dimension { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">int Dimension { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,7 +151,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int16</span></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -168,10 +174,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_IWorldObject_Position.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IWorldObject.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/apiSpec/new?filename=AltV_Net_Elements_Entities_IWorldObject_Position.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IWorldObject.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/IWorldObject.cs/#L11">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/api/AltV.Net/Elements/Entities/IWorldObject.cs/#L11">View Source</a>
   </span>
   <a id="AltV_Net_Elements_Entities_IWorldObject_Position_" data-uid="AltV.Net.Elements.Entities.IWorldObject.Position*"></a>
   <h4 id="AltV_Net_Elements_Entities_IWorldObject_Position" data-uid="AltV.Net.Elements.Entities.IWorldObject.Position">Position</h4>
@@ -285,10 +291,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/new/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/apiSpec/new?filename=AltV_Net_Elements_Entities_IWorldObject.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IWorldObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/new/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/apiSpec/new?filename=AltV_Net_Elements_Entities_IWorldObject.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IWorldObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3e7714e39035bb64ec2d42f7afad8b2ce0a5f055/api/AltV.Net/Elements/Entities/IWorldObject.cs/#L5" class="contribution-link">View Source</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0af7ae807c1c8f087d2d63313d43ed07a2ac2888/api/AltV.Net/Elements/Entities/IWorldObject.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

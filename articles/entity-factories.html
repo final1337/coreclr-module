@@ -8,7 +8,7 @@
     <title>Entity factories </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Entity factories ">
-    <meta name="generator" content="docfx 2.48.0.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -128,6 +128,26 @@ This will look like the code below.</p>
         }
 }
 </code></pre>
+<h2 id="use-the-custom-entity-class">Use the custom Entity class</h2>
+<p>For events inside IScript class you can just use your own class instead of IPlayer/IVehicle ect.</p>
+<pre><code class="lang-csharp">public class SampleScript: IScript {
+  [ScriptEvent(ScriptEventType.PlayerConnect)]
+  public void MyPlayerConnect(MyPlayer player, string reason)
+  {
+   //...
+  }
+}
+</code></pre>
+<p>For events registered via Alt you can just cast the entities to the custom classes.</p>
+<pre><code class="lang-csharp">Alt.OnPlayerConnect += OnPlayerConnect;
+//...
+private void OnPlayerConnect(IPlayer player, string reason)
+{
+  var myPlayer = (MyPlayer)player;
+  //...
+}
+</code></pre>
+<p>}</p>
 </article>
           </div>
           
@@ -136,7 +156,7 @@ This will look like the code below.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/78bd8b66e423209c41c870b571a819cd2b081603/docs/articles/entity-factories.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/797e54f086784ea72cf127eaba39c9d0c11dbdfc/docs/articles/entity-factories.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

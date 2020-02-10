@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Resource communication </title>
+    <title>Serialization </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Resource communication ">
+    <meta name="title" content="Serialization ">
     <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,74 +67,107 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="resource-communication">Resource communication</h1>
+<h1 id="serialization">Serialization</h1>
 
-<p>This article will describe how to communicate between different server resources.</p>
-<h2 id="exports">Exports</h2>
-<p>Resources can define data that other resources can access while the resource is starting. This data is immutable after resource finished starting and can be accessed from any serverside resource.</p>
-<pre><code class="lang-csharp">public class SampleResource : AsyncResource
-{
-  public override void OnStart()
-  {
-    var value = &quot;test&quot;;
-    Alt.Export(&quot;myDataKey&quot;, value);
-  }
+<p>This article describes how to send custom objects via events.</p>
+<h2 id="writable-objects">Writable objects</h2>
+<p>This is the easy way to send objects from server to client, because it only supports writing not reading.
+This only works when you can edit the class you want to send, because you need to add a interface to it.</p>
+<h3 id="step-1">Step 1</h3>
+<p>Add the <code>IWritable</code> interface to your class.</p>
+<pre><code class="lang-csharp">public class MyClass : IWritable {
+
 }
 </code></pre>
-<p>You can export any data you can also send via events. Including: <code>object</code>, <code>bool</code>, <code>int</code>, <code>long</code>, <code>uint</code>, <code>ulong</code>, <code>float</code>, <code>double</code>, <code>string</code>, <code>IPlayer</code> (or any types extending IPlayer), <code>IVehicle</code> (or any types extending IVehicle), <code>Dictionary&lt;string, (any type listed here)</code>, <code>Alt.Function</code>, any type listed here as array e.g. int[].
-Also any dictionary in dictionary, array in array, ect. endless depth types are supported, because they are resolved recursively.</p>
-<h3 id="export-functions">Export functions</h3>
-<p>Functions are also possible to export. Supported function parameters are same types supported by events and exports.</p>
-<pre><code class="lang-csharp">public class SampleResource : AsyncResource
+<h3 id="step-2">Step 2</h3>
+<p>This interface will require you to implement the <code>public void OnWrite(IMValueWriter writer)</code> method.</p>
+<pre><code class="lang-csharp">public class MyClass : IWritable
 {
-  public override void OnStart()
-  {
-    Alt.Export(&quot;myFunction&quot;, new Action&lt;int&gt;(Myfunc));
+    public void OnWrite(IMValueWriter writer)
+    {
+    }
+}
+</code></pre>
+<h3 id="step-3">Step 3</h3>
+<p>Now you can use the writer to write data to it. <code>OnWrite</code> will call automatically when you put a object that is a instance of your class into <code>Alt.Emit, player.Emit</code> ect.</p>
+<p>This is a simple example of a class only containing a single int.</p>
+<pre><code class="lang-csharp">public class MyClass : IWritable
+{
+    private int myInt;
     
-    Alt.Export(&quot;myFunction2&quot;, new Func&lt;int, bool&gt;(Myfunc2));
-  }
-  
-  public void Myfunc(int myInt)
-  {
-            
-  }
-  
-  public bool Myfunc2(int myInt)
-  {
-            
-  }
+    public MyClass(int myInt) {
+      this.myInt = myInt;
+    }
+
+    public void OnWrite(IMValueWriter writer)
+    {
+        writer.BeginObject(); // We tell the writer to create a object.
+        writer.Name(&quot;myInt&quot;); // We tell the writer the next attribute of the object has the name 'myInt'.
+        writer.Value(myInt); // We tell the writer the value for the attribute 'myInt'.
+        writer.EndObject(); // We tell the writer that we are done creating the object.
+    }
 }
 </code></pre>
-<h2 id="imports">Imports</h2>
-<p>Resources can import data that got exported from other resources. Most likely you will define the resource where you import from as <code>deps: [ myResource, myResource2 ]</code> in your <code>resource.cfg</code> to make sure the resource is already started when your resource starts.
-You also have to define the resource name where you import data from.</p>
-<pre><code class="lang-csharp">public class SampleResource : AsyncResource
+<p>Now you can just send a instance of the class.</p>
+<pre><code class="lang-csharp">player.Emit(&quot;myEventName&quot;, new MyClass(42));
+</code></pre>
+<p>This will result in the following js output</p>
+<pre><code class="lang-js">alt.onServer(&quot;myEventName&quot;, (myClass) =&gt; {
+    alt.log(JSON.stringify(myClass));
+    alt.log(myClass.myInt); // 42
+})
+// Console:
 {
-  public override void OnStart()
-  {
-    Alt.Import(&quot;myResourceToImportFrom&quot;, &quot;myFunction&quot;, out Action&lt;int&gt; myFunction);
-    
-    myFunction(13);
-  }
+   &quot;myInt&quot;: 42
 }
 </code></pre>
-<p>This works the same with functions that return data. The return type is always the last generic type in <code>Func&lt;...&gt;</code>.</p>
-<pre><code class="lang-csharp">public class SampleResource : AsyncResource
+<h3 id="step-4">Step 4</h3>
+<p>To send arrays its the same logic.</p>
+<pre><code class="lang-csharp">public class MyClass2 : IWritable
 {
-  public override void OnStart()
-  {
-    Alt.Import(&quot;myResourceToImportFrom&quot;, &quot;myFunction2&quot;, out Func&lt;int, bool&gt; myFunction);
-    
-    Console.WriteLine(myFunction(13));
-  }
+    public void OnWrite(IMValueWriter writer)
+    {
+        writer.BeginObject(); // We tell the writer to create a object.
+          writer.Name(&quot;myInts&quot;); // We tell the writer the next attribute of the object has the name 'myInts'.
+          writer.BeginArray(); // We tell the writer the value for the attribute 'myInts' is a array.
+            for (int i = 0;i &lt; 3;i++ {
+              writer.BeginObject();
+                writer.Name(&quot;myInt&quot;);
+                writer.Value(i);
+              writer.EndObject();
+            }
+          writer.EndArray(); // We tell the writer we are done creating the array
+        writer.EndObject(); // We tell the writer that we are done creating the object.
+    }
 }
 </code></pre>
-<h2 id="events">Events</h2>
-<p>Another way to communicate with resources is by sending events to them. The <code>Alt.Emit(&quot;eventName&quot;, values)</code> works same as player events and supports all data types that are supported by exports.
-Every resource will get notified about the event. You can listen explicit for server events via <code>Alt.OnServer(&quot;eventName&quot;, OnServerEvent)</code>.
-The server event delegate needs to have to following signature.</p>
-<pre><code class="lang-csharp">public void OnServerEvent(object[] args)
+<p>Now you can just send a instance of the class.</p>
+<pre><code class="lang-csharp">player.Emit(&quot;myEventName&quot;, new MyClass2());
+</code></pre>
+<p>This will result in the following js output</p>
+<pre><code class="lang-js">alt.onServer(&quot;myEventName&quot;, (myClass) =&gt; {
+    alt.log(JSON.stringify(myClass));
+    alt.log(myClass.myInts.length); // 3
+    alt.log(myClass.myInts[0].myInt); // 0
+    alt.log(myClass.myInts[1].myInt); // 1
+    alt.log(myClass.myInts[2].myInt); // 2
+    for (const obj of myClass.myInts) {
+      alt.log(obj.myInt);
+    }
+})
+// Console:
 {
+   &quot;myInts&quot;: [
+    {
+      &quot;myInt&quot;: 0
+    },
+    {
+      &quot;myInt&quot;: 1
+    },
+    {
+      &quot;myInt&quot;: 2
+    },
+   ]
 }
 </code></pre>
 </article>
@@ -145,7 +178,7 @@ The server event delegate needs to have to following signature.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/24231f503eb4491b4a2745811913afcc7d2735c6/docs/articles/resource-communication.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/24231f503eb4491b4a2745811913afcc7d2735c6/docs/articles/serialization.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

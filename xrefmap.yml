@@ -4731,19 +4731,6 @@ references:
   isSpec: "True"
   fullName: AltV.Net.Async.AltAsync.SetModKitAsync
   nameWithType: AltAsync.SetModKitAsync
-- uid: AltV.Net.Async.AltAsync.SetNameAsync(AltV.Net.Elements.Entities.IPlayer,System.String)
-  name: SetNameAsync(IPlayer, String)
-  href: api/AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_SetNameAsync_AltV_Net_Elements_Entities_IPlayer_System_String_
-  commentId: M:AltV.Net.Async.AltAsync.SetNameAsync(AltV.Net.Elements.Entities.IPlayer,System.String)
-  fullName: AltV.Net.Async.AltAsync.SetNameAsync(AltV.Net.Elements.Entities.IPlayer, System.String)
-  nameWithType: AltAsync.SetNameAsync(IPlayer, String)
-- uid: AltV.Net.Async.AltAsync.SetNameAsync*
-  name: SetNameAsync
-  href: api/AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_SetNameAsync_
-  commentId: Overload:AltV.Net.Async.AltAsync.SetNameAsync
-  isSpec: "True"
-  fullName: AltV.Net.Async.AltAsync.SetNameAsync
-  nameWithType: AltAsync.SetNameAsync
 - uid: AltV.Net.Async.AltAsync.SetNeonActiveAsync(AltV.Net.Elements.Entities.IVehicle,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
   name: SetNeonActiveAsync(IVehicle, Boolean, Boolean, Boolean, Boolean)
   href: api/AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_SetNeonActiveAsync_AltV_Net_Elements_Entities_IVehicle_System_Boolean_System_Boolean_System_Boolean_System_Boolean_

@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EntityThread
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EntityThread
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AltV.Net.EntitySync.EntityThread">
+  
+  
+  <h1 id="AltV_Net_EntitySync_EntityThread" data-uid="AltV.Net.EntitySync.EntityThread" class="text-break">Class EntityThread
+  </h1>
+  <div class="markdown level0 summary"><p>The entity thread checks in a endless loop if entities should be created or removed for all clients.
+And it delivers the results via the provided action callbacks.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EntityThread</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.EntitySync.html">AltV.Net.EntitySync</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.EntitySync.dll</h6>
+  <h5 id="AltV_Net_EntitySync_EntityThread_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EntityThread : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/d1906bb2cf619905c98f2b6c1f16046c8f05bc50/apiSpec/new?filename=AltV_Net_EntitySync_EntityThread__ctor_AltV_Net_EntitySync_EntityThreadRepository_AltV_Net_EntitySync_ClientThreadRepository_AltV_Net_EntitySync_SpatialPartitions_SpatialPartition_System_Int32_Action_AltV_Net_EntitySync_IClient_AltV_Net_EntitySync_IEntity_LinkedList_System_String___Action_AltV_Net_EntitySync_IClient_AltV_Net_EntitySync_IEntity__Action_AltV_Net_EntitySync_IClient_AltV_Net_EntitySync_IEntity_LinkedList_System_String___Action_AltV_Net_EntitySync_IClient_AltV_Net_EntitySync_IEntity_Vector3__Action_AltV_Net_EntitySync_IClient_AltV_Net_EntitySync_IEntity__.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntityThread.%23ctor(AltV.Net.EntitySync.EntityThreadRepository%2CAltV.Net.EntitySync.ClientThreadRepository%2CAltV.Net.EntitySync.SpatialPartitions.SpatialPartition%2CSystem.Int32%2CAction%7BAltV.Net.EntitySync.IClient%2CAltV.Net.EntitySync.IEntity%2CLinkedList%7BSystem.String%7D%7D%2CAction%7BAltV.Net.EntitySync.IClient%2CAltV.Net.EntitySync.IEntity%7D%2CAction%7BAltV.Net.EntitySync.IClient%2CAltV.Net.EntitySync.IEntity%2CLinkedList%7BSystem.String%7D%7D%2CAction%7BAltV.Net.EntitySync.IClient%2CAltV.Net.EntitySync.IEntity%2CVector3%7D%2CAction%7BAltV.Net.EntitySync.IClient%2CAltV.Net.EntitySync.IEntity%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d1906bb2cf619905c98f2b6c1f16046c8f05bc50/api/AltV.Net.EntitySync/EntityThread.cs/#L44">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntityThread__ctor_" data-uid="AltV.Net.EntitySync.EntityThread.#ctor*"></a>
+  <h4 id="AltV_Net_EntitySync_EntityThread__ctor_AltV_Net_EntitySync_EntityThreadRepository_AltV_Net_EntitySync_ClientThreadRepository_AltV_Net_EntitySync_SpatialPartitions_SpatialPartition_System_Int32_Action_AltV_Net_EntitySync_IClient_AltV_Net_EntitySync_IEntity_LinkedList_System_String___Action_AltV_Net_EntitySync_IClient_AltV_Net_EntitySync_IEntity__Action_AltV_Net_EntitySync_IClient_AltV_Net_EntitySync_IEntity_LinkedList_System_String___Action_AltV_Net_EntitySync_IClient_AltV_Net_EntitySync_IEntity_Vector3__Action_AltV_Net_EntitySync_IClient_AltV_Net_EntitySync_IEntity__" data-uid="AltV.Net.EntitySync.EntityThread.#ctor(AltV.Net.EntitySync.EntityThreadRepository,AltV.Net.EntitySync.ClientThreadRepository,AltV.Net.EntitySync.SpatialPartitions.SpatialPartition,System.Int32,Action{AltV.Net.EntitySync.IClient,AltV.Net.EntitySync.IEntity,LinkedList{System.String}},Action{AltV.Net.EntitySync.IClient,AltV.Net.EntitySync.IEntity},Action{AltV.Net.EntitySync.IClient,AltV.Net.EntitySync.IEntity,LinkedList{System.String}},Action{AltV.Net.EntitySync.IClient,AltV.Net.EntitySync.IEntity,Vector3},Action{AltV.Net.EntitySync.IClient,AltV.Net.EntitySync.IEntity})">EntityThread(EntityThreadRepository, ClientThreadRepository, SpatialPartition, Int32, Action&lt;IClient, IEntity, LinkedList&lt;String&gt;&gt;, Action&lt;IClient, IEntity&gt;, Action&lt;IClient, IEntity, LinkedList&lt;String&gt;&gt;, Action&lt;IClient, IEntity, Vector3&gt;, Action&lt;IClient, IEntity&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityThread(EntityThreadRepository entityThreadRepository, ClientThreadRepository clientThreadRepository, SpatialPartition spatialPartition, int syncRate, Action&lt;IClient, IEntity, LinkedList&lt;string&gt;&gt; onEntityCreate, Action&lt;IClient, IEntity&gt; onEntityRemove, Action&lt;IClient, IEntity, LinkedList&lt;string&gt;&gt; onEntityDataChange, Action&lt;IClient, IEntity, Vector3&gt; onEntityPositionChange, Action&lt;IClient, IEntity&gt; onEntityClearCache)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.EntityThreadRepository.html">EntityThreadRepository</a></td>
+        <td><span class="parametername">entityThreadRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.ClientThreadRepository.html">ClientThreadRepository</a></td>
+        <td><span class="parametername">clientThreadRepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.SpatialPartitions.SpatialPartition.html">SpatialPartition</a></td>
+        <td><span class="parametername">spatialPartition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">syncRate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="AltV.Net.EntitySync.IClient.html">IClient</a>, <a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a>, <span class="xref">LinkedList</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">onEntityCreate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="AltV.Net.EntitySync.IClient.html">IClient</a>, <a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a>&gt;</td>
+        <td><span class="parametername">onEntityRemove</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="AltV.Net.EntitySync.IClient.html">IClient</a>, <a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a>, <span class="xref">LinkedList</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">onEntityDataChange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="AltV.Net.EntitySync.IClient.html">IClient</a>, <a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a>, <span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">onEntityPositionChange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="AltV.Net.EntitySync.IClient.html">IClient</a>, <a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a>&gt;</td>
+        <td><span class="parametername">onEntityClearCache</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/d1906bb2cf619905c98f2b6c1f16046c8f05bc50/apiSpec/new?filename=AltV_Net_EntitySync_EntityThread_OnLoop.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntityThread.OnLoop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d1906bb2cf619905c98f2b6c1f16046c8f05bc50/api/AltV.Net.EntitySync/EntityThread.cs/#L99">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntityThread_OnLoop_" data-uid="AltV.Net.EntitySync.EntityThread.OnLoop*"></a>
+  <h4 id="AltV_Net_EntitySync_EntityThread_OnLoop" data-uid="AltV.Net.EntitySync.EntityThread.OnLoop">OnLoop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLoop()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/d1906bb2cf619905c98f2b6c1f16046c8f05bc50/apiSpec/new?filename=AltV_Net_EntitySync_EntityThread_Stop.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntityThread.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d1906bb2cf619905c98f2b6c1f16046c8f05bc50/api/AltV.Net.EntitySync/EntityThread.cs/#L260">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntityThread_Stop_" data-uid="AltV.Net.EntitySync.EntityThread.Stop*"></a>
+  <h4 id="AltV_Net_EntitySync_EntityThread_Stop" data-uid="AltV.Net.EntitySync.EntityThread.Stop">Stop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/new/d1906bb2cf619905c98f2b6c1f16046c8f05bc50/apiSpec/new?filename=AltV_Net_EntitySync_EntityThread.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntityThread%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d1906bb2cf619905c98f2b6c1f16046c8f05bc50/api/AltV.Net.EntitySync/EntityThread.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

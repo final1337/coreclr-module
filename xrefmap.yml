@@ -37939,6 +37939,12 @@ references:
   commentId: F:AltV.Net.Enums.VehicleModType.Color2
   fullName: AltV.Net.Enums.VehicleModType.Color2
   nameWithType: VehicleModType.Color2
+- uid: AltV.Net.Enums.VehicleModType.DashboardColor
+  name: DashboardColor
+  href: api/AltV.Net.Enums.VehicleModType.html#AltV_Net_Enums_VehicleModType_DashboardColor
+  commentId: F:AltV.Net.Enums.VehicleModType.DashboardColor
+  fullName: AltV.Net.Enums.VehicleModType.DashboardColor
+  nameWithType: VehicleModType.DashboardColor
 - uid: AltV.Net.Enums.VehicleModType.DialDesign
   name: DialDesign
   href: api/AltV.Net.Enums.VehicleModType.html#AltV_Net_Enums_VehicleModType_DialDesign
@@ -38089,6 +38095,12 @@ references:
   commentId: F:AltV.Net.Enums.VehicleModType.Transmission
   fullName: AltV.Net.Enums.VehicleModType.Transmission
   nameWithType: VehicleModType.Transmission
+- uid: AltV.Net.Enums.VehicleModType.TrimColor
+  name: TrimColor
+  href: api/AltV.Net.Enums.VehicleModType.html#AltV_Net_Enums_VehicleModType_TrimColor
+  commentId: F:AltV.Net.Enums.VehicleModType.TrimColor
+  fullName: AltV.Net.Enums.VehicleModType.TrimColor
+  nameWithType: VehicleModType.TrimColor
 - uid: AltV.Net.Enums.VehicleModType.TrimDesign
   name: TrimDesign
   href: api/AltV.Net.Enums.VehicleModType.html#AltV_Net_Enums_VehicleModType_TrimDesign

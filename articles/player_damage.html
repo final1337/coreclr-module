@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum EventPipeErrorCode
-   </title>
+    <title>WeaponDamage </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum EventPipeErrorCode
-   ">
+    <meta name="title" content="WeaponDamage ">
     <meta name="generator" content="docfx 2.49.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,47 +66,34 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AltV.Net.Host.Diagnostics.Eventing.EventPipeErrorCode">
-  
-  
-  <h1 id="AltV_Net_Host_Diagnostics_Eventing_EventPipeErrorCode" data-uid="AltV.Net.Host.Diagnostics.Eventing.EventPipeErrorCode" class="text-break">Enum EventPipeErrorCode
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Host.Diagnostics.Eventing.html">AltV.Net.Host.Diagnostics.Eventing</a></h6>
-  <h6><strong>Assembly</strong>: AltV.Net.Host.dll</h6>
-  <h5 id="AltV_Net_Host_Diagnostics_Eventing_EventPipeErrorCode_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum EventPipeErrorCode : uint</code></pre>
-  </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="AltV_Net_Host_Diagnostics_Eventing_EventPipeErrorCode_BAD_ENCODING">BAD_ENCODING</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AltV_Net_Host_Diagnostics_Eventing_EventPipeErrorCode_UNKNOWN_COMMAND">UNKNOWN_COMMAND</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AltV_Net_Host_Diagnostics_Eventing_EventPipeErrorCode_UNKNOWN_ERROR">UNKNOWN_ERROR</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="AltV_Net_Host_Diagnostics_Eventing_EventPipeErrorCode_UNKNOWN_MAGIC">UNKNOWN_MAGIC</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="weapondamage">WeaponDamage</h1>
+
+<p>This event will be called if a player do any damage by a Weapon to a other player.</p>
+<h5 id="note--events-have-to-be-created-in-a-iscript-class-otherwise-it-wont-work">Note : Events have to be created in a IScript Class! Otherwise it won´t work!</h5>
+<pre><code class="lang-csharp">/* We create our IScript class */
+public class AltV_Wiki : IScript
+{
+    /* We declare &amp; Create our Event Handler. */
+    [ScriptEvent(ScriptEventType.WeaponDamage)]
+    public static void WeaponDamage(IPlayer player, IPlayer target, uint weapon, ushort dmg, Position offset, BodyPart bodypart)
+    {
+
+        /* We Convert the Weapon uint to a regular WeaponModel Enum. */
+        AltV.Net.Enums.WeaponModel weaponModel = (AltV.Net.Enums.WeaponModel)weapon;
+        /* We notify the player. */
+        player?.SendChatMessage(&quot;You hitted &quot; + target?.Name + &quot; and gave him &quot; + dmg + &quot; damage! Weapon: &quot; + weaponModel);
+        target?.SendChatMessage(player?.Name + &quot; hitted you and gave you &quot; + dmg + &quot; damage! Weapon: &quot; + weaponModel);
+
+        /* We check if the BodyPart is his Pelvis ... */
+        if (bodypart == BodyPart.Pelvis)
+        {
+            player?.SendChatMessage(&quot;You hitted a Player in his Pelvis! Why you did that ?!&quot;);
+            target?.SendChatMessage(&quot;You got hitted by a &quot; + weaponModel + &quot; in your Pelvis :(&quot;);
+        }
+    }
+}
+</code></pre>
 </article>
           </div>
           
@@ -117,10 +102,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/new/4fc2eed480a2992aad149fee8578e39b5f778832/apiSpec/new?filename=AltV_Net_Host_Diagnostics_Eventing_EventPipeErrorCode.md&amp;value=---%0Auid%3A%20AltV.Net.Host.Diagnostics.Eventing.EventPipeErrorCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/4fc2eed480a2992aad149fee8578e39b5f778832/api/AltV.Net.Host/Diagnostics/Eventing/EventPipeClient.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/4fc2eed480a2992aad149fee8578e39b5f778832/docs/articles/player_damage.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

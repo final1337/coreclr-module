@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Entity Sync </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Entity Sync ">
+    <meta name="generator" content="docfx 2.49.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="entity-sync">Entity Sync</h1>
+
+<p>This article will describes how to use the entity sync package to sync custom entities from serverside to clients efficiently.</p>
+<h2 id="setup">Setup</h2>
+<p>Install the following nuget packages and make sure both packages are on the latest version:
+<a href="https://www.nuget.org/packages/AltV.Net.EntitySync">https://www.nuget.org/packages/AltV.Net.EntitySync</a> // The core package with the sync logic
+<a href="https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent">https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent</a> // A optional package that will send the entity sync events to the client via server events</p>
+<h2 id="configure-the-entity-sync">Configure the Entity Sync</h2>
+<h2 id="configure-the-entity-sync-1">Configure the Entity Sync</h2>
+<pre><code class="lang-csharp">
+AltEntitySync.Init(1, 100,
+   repository =&gt; new ServerEventNetworkLayer(repository),
+   () =&gt; new LimitedGrid3(50_000, 50_000, 100, 10_000, 10_000, 600),
+   new IdProvider());
+</code></pre>
+<p>Now breakdown the parameters of the Init function:</p>
+<p>The first parameter is the thread count, this describes the number of thats that will run in parallel to calculate the streamed entities.</p>
+<p>The second parameter is the sync rate, it describes the interval in which each sync thread calculates the streamed entities.</p>
+<p>The third parameter is the Action that returns a new NetworkLayer for a repository. The ServerEventNetworkLayer is part of the second nuget package.</p>
+<p>The fourth parameter is the Action that returns a new space partitioning algorithm for each sync thread. The LimitedGrid3 is one of the algorithms that comes included in the core.
+LimitedGrid3 has following parameters: (int maxX, int maxY, int areaSize, int xOffset, int yOffset, int limit).
+The (int maxX, int maxY) parameters are defining the size of the map the grid is inserting, removing and finding entities in. The default values are defining the default gta 5 map.
+The two offsets (int xOffset, int yOffset) preventing the corrdinates to become negative, because the gta maps goes from -10k to 50k.
+The (int limit) makes sure a client can only have streamed in the amount of entities he can actually render. E.g. the gta 5 client in altv can only create around 600 Objects without stability issues.</p>
+<p>The fifth and last parameter is the id provider that increments the entity ids incremental and free's unused ids. The IdProvider is included inside the core package as well.</p>
+<h2 id="add-entities">Add Entities</h2>
+<p>To add entities that can be streamed there are two ways.</p>
+<p>The easiert way is to use the CreateEntity method from AltEntitySync.</p>
+<pre><code class="lang-csharp">AltEntitySync.CreateEntity(ulong type, Vector3 position, int dimension, uint range,
+            IDictionary&lt;string, object&gt; data);
+</code></pre>
+<p>The entity type are your own ids to differentiate between e.g. a object, a ped, a 3d Text, ect.
+The position is the entity position.
+The dimension is working same as the dimension of a player, vehicle ect.
+The range defines the streaming range this entity is streamed in.
+The data is the data the entity contains when its streamed in on clientside.</p>
+<p>The second way is to use the entity constructor.</p>
+<pre><code class="lang-csharp">var entity = new Entity(ulong type, Vector3 position, int dimension, uint range,
+            IDictionary&lt;string, object&gt; data);
+AltEntitySync.AddEntity(entity);
+</code></pre>
+<h2 id="remove-entities">Remove entities</h2>
+<p>To remove a entity you just need the entity or the entity id.</p>
+<pre><code class="lang-csharp">AltEntitySync.RemoveEntity(IEntity entity);
+// or
+AltEntitySync.RemoveEntity(ulong id);
+</code></pre>
+<h2 id="update-entity-position">Update entity position</h2>
+<p>The update the position of a entity just use the position setter.
+The position is a Vector3.</p>
+<pre><code class="lang-csharp">entity.Position = new Vector3(x, y, z);
+</code></pre>
+<h2 id="update-entity-range">Update entity range</h2>
+<p>The update the range of a entity just use the range setter.
+The range is a uint and should never be 0.</p>
+<pre><code class="lang-csharp">entity.Range = range;
+</code></pre>
+<h2 id="update-entity-dimension">Update entity dimension</h2>
+<p>The update the dimension of a entity just use the dimension setter.
+The dimension is a int.</p>
+<pre><code class="lang-csharp">entity.Dimension = dimension;
+</code></pre>
+<h2 id="update-entity-data">Update entity data</h2>
+<p>The update the range of a entity just use the data methods.
+Each type that works with <a href="https://fabianterhorst.github.io/coreclr-module/articles/custom-events.html">Custom Events</a> also works with ServerEventNetworkLayer.</p>
+<pre><code class="lang-csharp">entity.SetData(&quot;my-data&quot;, 123);
+</code></pre>
+<p>You can reset the data with. Resetted data is received as null.</p>
+<pre><code class="lang-csharp">entity.ResetData(&quot;my-data&quot;);
+</code></pre>
+<h2 id="get-entity-data">Get entity data</h2>
+<pre><code class="lang-csharp">if (entity.TryGetData(&quot;my-data&quot;, out int data)) {
+
+}
+</code></pre>
+<h2 id="servereventnetworklayer">ServerEventNetworkLayer</h2>
+<p>This describes the events the client receives from the ServerEventNetworkLayer that you need to implement in your client code.</p>
+<h3 id="entity-create">Entity create</h3>
+<p>This is called every time you come in the range of the entity.</p>
+<p>The server assumes you cache the entity depending on the entity.id so make sure to do it.</p>
+<pre><code class="lang-js">alt.on(&quot;entitySync:create&quot;, entity =&gt; {
+    alt.log(entity.id);
+    alt.log(entity.type);
+    alt.log(entity.position);
+    alt.log(entity.data);
+    if (entity.data) {
+      entityData[entity.id] = entity.data;
+    }
+})
+</code></pre>
+<h3 id="entity-remove">Entity remove</h3>
+<p>This is called every time you go out of the range of the entity.</p>
+<pre><code class="lang-js">alt.on(&quot;entitySync:remove&quot;, entityId =&gt; {
+    const entityData = entityData[entityId];
+    alt.log(entityId);
+    alt.log(entityData);
+})
+</code></pre>
+<h3 id="entity-position-update">Entity position update</h3>
+<p>This is called very time you update the entity position while you are in the range of the entity.</p>
+<pre><code class="lang-js">alt.on(&quot;entitySync:updatePosition&quot;, (entityId, position) =&gt; {
+    const entityData = entityData[entityId];
+    alt.log(entityId);
+    alt.log(entityData);
+})
+</code></pre>
+<h3 id="entity-data-update">Entity data update</h3>
+<p>This is called every time you update the entity data while you are in the range of the entity.</p>
+<pre><code class="lang-js">alt.on(&quot;entitySync:updateData&quot;, (entityId, entityData) =&gt; {
+    let entityData = entityData[entityId];
+    if (!entityData) {
+        entityData = {};
+    }
+    for (const key in entityData) {
+        entityData[key] = entityData[key];
+    }
+})
+</code></pre>
+<h3 id="entity-clear-cache">Entity clear cache</h3>
+<p>This is called every time you remove a entity on serverside completely and clients still have data in cache of this entity.</p>
+<pre><code class="lang-js">alt.on(&quot;entitySync:clearCache&quot;, entityId =&gt; {
+    delete entityData[entityId];
+})
+</code></pre>
+<p>Now you can call your own logic inside the events to spawn objects, npcs, 3d text, markers, ... ect.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/69f9090c179e84f546b0ed6791c75578c09137f3/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

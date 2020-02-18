@@ -27487,6 +27487,167 @@ references:
   commentId: F:AltV.Net.EntitySync.SpatialPartitions.Grid2.yOffset
   fullName: AltV.Net.EntitySync.SpatialPartitions.Grid2.yOffset
   nameWithType: Grid2.yOffset
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3
+  name: Grid3
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html
+  commentId: T:AltV.Net.EntitySync.SpatialPartitions.Grid3
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3
+  nameWithType: Grid3
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  name: Grid3(Int32, Int32, Int32, Int32, Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.Grid3.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.Grid3(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: Grid3.Grid3(Int32, Int32, Int32, Int32, Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.#ctor*
+  name: Grid3
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3__ctor_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.Grid3.#ctor
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.Grid3
+  nameWithType: Grid3.Grid3
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.Add(AltV.Net.EntitySync.IEntity)
+  name: Add(IEntity)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_Add_AltV_Net_EntitySync_IEntity_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.Grid3.Add(AltV.Net.EntitySync.IEntity)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.Add(AltV.Net.EntitySync.IEntity)
+  nameWithType: Grid3.Add(IEntity)
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.Add*
+  name: Add
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_Add_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.Grid3.Add
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.Add
+  nameWithType: Grid3.Add
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.areaSize
+  name: areaSize
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_areaSize
+  commentId: F:AltV.Net.EntitySync.SpatialPartitions.Grid3.areaSize
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.areaSize
+  nameWithType: Grid3.areaSize
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.CanSeeOtherDimension(System.Int32,System.Int32)
+  name: CanSeeOtherDimension(Int32, Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_CanSeeOtherDimension_System_Int32_System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.Grid3.CanSeeOtherDimension(System.Int32,System.Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.CanSeeOtherDimension(System.Int32, System.Int32)
+  nameWithType: Grid3.CanSeeOtherDimension(Int32, Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.CanSeeOtherDimension*
+  name: CanSeeOtherDimension
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_CanSeeOtherDimension_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.Grid3.CanSeeOtherDimension
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.CanSeeOtherDimension
+  nameWithType: Grid3.CanSeeOtherDimension
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.entityAreas
+  name: entityAreas
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_entityAreas
+  commentId: F:AltV.Net.EntitySync.SpatialPartitions.Grid3.entityAreas
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.entityAreas
+  nameWithType: Grid3.entityAreas
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.Find(Vector3,System.Int32)
+  name: Find(Vector3, Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_Find_Vector3_System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.Grid3.Find(Vector3,System.Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.Find(Vector3, System.Int32)
+  nameWithType: Grid3.Find(Vector3, Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.Find*
+  name: Find
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_Find_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.Grid3.Find
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.Find
+  nameWithType: Grid3.Find
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.maxX
+  name: maxX
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_maxX
+  commentId: F:AltV.Net.EntitySync.SpatialPartitions.Grid3.maxX
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.maxX
+  nameWithType: Grid3.maxX
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.maxXAreaIndex
+  name: maxXAreaIndex
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_maxXAreaIndex
+  commentId: F:AltV.Net.EntitySync.SpatialPartitions.Grid3.maxXAreaIndex
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.maxXAreaIndex
+  nameWithType: Grid3.maxXAreaIndex
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.maxY
+  name: maxY
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_maxY
+  commentId: F:AltV.Net.EntitySync.SpatialPartitions.Grid3.maxY
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.maxY
+  nameWithType: Grid3.maxY
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.maxYAreaIndex
+  name: maxYAreaIndex
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_maxYAreaIndex
+  commentId: F:AltV.Net.EntitySync.SpatialPartitions.Grid3.maxYAreaIndex
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.maxYAreaIndex
+  nameWithType: Grid3.maxYAreaIndex
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.Remove(AltV.Net.EntitySync.IEntity)
+  name: Remove(IEntity)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_Remove_AltV_Net_EntitySync_IEntity_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.Grid3.Remove(AltV.Net.EntitySync.IEntity)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.Remove(AltV.Net.EntitySync.IEntity)
+  nameWithType: Grid3.Remove(IEntity)
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.Remove*
+  name: Remove
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_Remove_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.Grid3.Remove
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.Remove
+  nameWithType: Grid3.Remove
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityDimension(AltV.Net.EntitySync.IEntity,System.Int32)
+  name: UpdateEntityDimension(IEntity, Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_UpdateEntityDimension_AltV_Net_EntitySync_IEntity_System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityDimension(AltV.Net.EntitySync.IEntity,System.Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityDimension(AltV.Net.EntitySync.IEntity, System.Int32)
+  nameWithType: Grid3.UpdateEntityDimension(IEntity, Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityDimension*
+  name: UpdateEntityDimension
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_UpdateEntityDimension_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityDimension
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityDimension
+  nameWithType: Grid3.UpdateEntityDimension
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityPosition(AltV.Net.EntitySync.IEntity,Vector3@)
+  name: UpdateEntityPosition(IEntity, Vector3)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_UpdateEntityPosition_AltV_Net_EntitySync_IEntity_Vector3__
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityPosition(AltV.Net.EntitySync.IEntity,Vector3@)
+  name.vb: UpdateEntityPosition(IEntity, ByRef Vector3)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityPosition(AltV.Net.EntitySync.IEntity, Vector3)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityPosition(AltV.Net.EntitySync.IEntity, ByRef Vector3)
+  nameWithType: Grid3.UpdateEntityPosition(IEntity, Vector3)
+  nameWithType.vb: Grid3.UpdateEntityPosition(IEntity, ByRef Vector3)
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityPosition*
+  name: UpdateEntityPosition
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_UpdateEntityPosition_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityPosition
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityPosition
+  nameWithType: Grid3.UpdateEntityPosition
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityRange(AltV.Net.EntitySync.IEntity,System.UInt32)
+  name: UpdateEntityRange(IEntity, UInt32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_UpdateEntityRange_AltV_Net_EntitySync_IEntity_System_UInt32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityRange(AltV.Net.EntitySync.IEntity,System.UInt32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityRange(AltV.Net.EntitySync.IEntity, System.UInt32)
+  nameWithType: Grid3.UpdateEntityRange(IEntity, UInt32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityRange*
+  name: UpdateEntityRange
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_UpdateEntityRange_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityRange
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.UpdateEntityRange
+  nameWithType: Grid3.UpdateEntityRange
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.xOffset
+  name: xOffset
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_xOffset
+  commentId: F:AltV.Net.EntitySync.SpatialPartitions.Grid3.xOffset
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.xOffset
+  nameWithType: Grid3.xOffset
+- uid: AltV.Net.EntitySync.SpatialPartitions.Grid3.yOffset
+  name: yOffset
+  href: api/AltV.Net.EntitySync.SpatialPartitions.Grid3.html#AltV_Net_EntitySync_SpatialPartitions_Grid3_yOffset
+  commentId: F:AltV.Net.EntitySync.SpatialPartitions.Grid3.yOffset
+  fullName: AltV.Net.EntitySync.SpatialPartitions.Grid3.yOffset
+  nameWithType: Grid3.yOffset
 - uid: AltV.Net.EntitySync.SpatialPartitions.GridEntity
   name: GridEntity
   href: api/AltV.Net.EntitySync.SpatialPartitions.GridEntity.html
@@ -27556,6 +27717,828 @@ references:
   isSpec: "True"
   fullName: AltV.Net.EntitySync.SpatialPartitions.LimitedGrid.Find
   nameWithType: LimitedGrid.Find
+- uid: AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3
+  name: LimitedGrid3
+  href: api/AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.html
+  commentId: T:AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3
+  fullName: AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3
+  nameWithType: LimitedGrid3
+- uid: AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  name: LimitedGrid3(Int32, Int32, Int32, Int32, Int32, Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.html#AltV_Net_EntitySync_SpatialPartitions_LimitedGrid3__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.LimitedGrid3(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: LimitedGrid3.LimitedGrid3(Int32, Int32, Int32, Int32, Int32, Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.#ctor*
+  name: LimitedGrid3
+  href: api/AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.html#AltV_Net_EntitySync_SpatialPartitions_LimitedGrid3__ctor_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.#ctor
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.LimitedGrid3
+  nameWithType: LimitedGrid3.LimitedGrid3
+- uid: AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.Find(Vector3,System.Int32)
+  name: Find(Vector3, Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.html#AltV_Net_EntitySync_SpatialPartitions_LimitedGrid3_Find_Vector3_System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.Find(Vector3,System.Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.Find(Vector3, System.Int32)
+  nameWithType: LimitedGrid3.Find(Vector3, Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.Find*
+  name: Find
+  href: api/AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.html#AltV_Net_EntitySync_SpatialPartitions_LimitedGrid3_Find_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.Find
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.LimitedGrid3.Find
+  nameWithType: LimitedGrid3.Find
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2
+  name: SortedLimitedList<TKey, TValue>
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html
+  commentId: T:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2
+  name.vb: SortedLimitedList(Of TKey, TValue)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue)
+  nameWithType: SortedLimitedList<TKey, TValue>
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.#ctor(System.Int32)
+  name: SortedLimitedList(Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2__ctor_System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.#ctor(System.Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.SortedLimitedList(System.Int32)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).SortedLimitedList(System.Int32)
+  nameWithType: SortedLimitedList<TKey, TValue>.SortedLimitedList(Int32)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).SortedLimitedList(Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.#ctor(System.Int32,System.Int32)
+  name: SortedLimitedList(Int32, Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2__ctor_System_Int32_System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.#ctor(System.Int32,System.Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.SortedLimitedList(System.Int32, System.Int32)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).SortedLimitedList(System.Int32, System.Int32)
+  nameWithType: SortedLimitedList<TKey, TValue>.SortedLimitedList(Int32, Int32)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).SortedLimitedList(Int32, Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.#ctor(System.Int32,System.Int32,System.Nullable{IComparer{`0}})
+  name: SortedLimitedList(Int32, Int32, Nullable<IComparer<TKey>>)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2__ctor_System_Int32_System_Int32_System_Nullable_IComparer__0___
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.#ctor(System.Int32,System.Int32,System.Nullable{IComparer{`0}})
+  name.vb: SortedLimitedList(Int32, Int32, Nullable(Of IComparer(Of TKey)))
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.SortedLimitedList(System.Int32, System.Int32, System.Nullable<IComparer<TKey>>)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).SortedLimitedList(System.Int32, System.Int32, System.Nullable(Of IComparer(Of TKey)))
+  nameWithType: SortedLimitedList<TKey, TValue>.SortedLimitedList(Int32, Int32, Nullable<IComparer<TKey>>)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).SortedLimitedList(Int32, Int32, Nullable(Of IComparer(Of TKey)))
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.#ctor(System.Int32,System.Nullable{IComparer{`0}})
+  name: SortedLimitedList(Int32, Nullable<IComparer<TKey>>)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2__ctor_System_Int32_System_Nullable_IComparer__0___
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.#ctor(System.Int32,System.Nullable{IComparer{`0}})
+  name.vb: SortedLimitedList(Int32, Nullable(Of IComparer(Of TKey)))
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.SortedLimitedList(System.Int32, System.Nullable<IComparer<TKey>>)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).SortedLimitedList(System.Int32, System.Nullable(Of IComparer(Of TKey)))
+  nameWithType: SortedLimitedList<TKey, TValue>.SortedLimitedList(Int32, Nullable<IComparer<TKey>>)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).SortedLimitedList(Int32, Nullable(Of IComparer(Of TKey)))
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.#ctor*
+  name: SortedLimitedList
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2__ctor_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.#ctor
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.SortedLimitedList
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).SortedLimitedList
+  nameWithType: SortedLimitedList<TKey, TValue>.SortedLimitedList
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).SortedLimitedList
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Add(`0,`1)
+  name: Add(TKey, TValue)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Add__0__1_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Add(`0,`1)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Add(TKey, TValue)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Add(TKey, TValue)
+  nameWithType: SortedLimitedList<TKey, TValue>.Add(TKey, TValue)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Add(TKey, TValue)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Add*
+  name: Add
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Add_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Add
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Add
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Add
+  nameWithType: SortedLimitedList<TKey, TValue>.Add
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Add
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Capacity
+  name: Capacity
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Capacity
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Capacity
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Capacity
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Capacity
+  nameWithType: SortedLimitedList<TKey, TValue>.Capacity
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Capacity
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Capacity*
+  name: Capacity
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Capacity_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Capacity
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Capacity
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Capacity
+  nameWithType: SortedLimitedList<TKey, TValue>.Capacity
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Capacity
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Clear
+  name: Clear()
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Clear
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Clear
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Clear()
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Clear()
+  nameWithType: SortedLimitedList<TKey, TValue>.Clear()
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Clear()
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Clear*
+  name: Clear
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Clear_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Clear
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Clear
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Clear
+  nameWithType: SortedLimitedList<TKey, TValue>.Clear
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Clear
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Comparer
+  name: Comparer
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Comparer
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Comparer
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Comparer
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Comparer
+  nameWithType: SortedLimitedList<TKey, TValue>.Comparer
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Comparer
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Comparer*
+  name: Comparer
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Comparer_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Comparer
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Comparer
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Comparer
+  nameWithType: SortedLimitedList<TKey, TValue>.Comparer
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Comparer
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ContainsKey(`0)
+  name: ContainsKey(TKey)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ContainsKey__0_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ContainsKey(`0)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ContainsKey(TKey)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ContainsKey(TKey)
+  nameWithType: SortedLimitedList<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ContainsKey(TKey)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ContainsKey*
+  name: ContainsKey
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ContainsKey_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ContainsKey
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ContainsKey
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ContainsKey
+  nameWithType: SortedLimitedList<TKey, TValue>.ContainsKey
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ContainsKey
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ContainsValue(`1)
+  name: ContainsValue(TValue)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ContainsValue__1_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ContainsValue(`1)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ContainsValue(TValue)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ContainsValue(TValue)
+  nameWithType: SortedLimitedList<TKey, TValue>.ContainsValue(TValue)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ContainsValue(TValue)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ContainsValue*
+  name: ContainsValue
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ContainsValue_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ContainsValue
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ContainsValue
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ContainsValue
+  nameWithType: SortedLimitedList<TKey, TValue>.ContainsValue
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ContainsValue
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Count
+  name: Count
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Count
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Count
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Count
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Count
+  nameWithType: SortedLimitedList<TKey, TValue>.Count
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Count
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Count*
+  name: Count
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Count_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Count
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Count
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Count
+  nameWithType: SortedLimitedList<TKey, TValue>.Count
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Count
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.GetEnumerator
+  name: GetEnumerator()
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_GetEnumerator
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.GetEnumerator
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.GetEnumerator()
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).GetEnumerator()
+  nameWithType: SortedLimitedList<TKey, TValue>.GetEnumerator()
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).GetEnumerator()
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.GetEnumerator*
+  name: GetEnumerator
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_GetEnumerator_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.GetEnumerator
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.GetEnumerator
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).GetEnumerator
+  nameWithType: SortedLimitedList<TKey, TValue>.GetEnumerator
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).GetEnumerator
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.GetValues
+  name: GetValues()
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_GetValues
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.GetValues
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.GetValues()
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).GetValues()
+  nameWithType: SortedLimitedList<TKey, TValue>.GetValues()
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).GetValues()
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.GetValues*
+  name: GetValues
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_GetValues_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.GetValues
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.GetValues
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).GetValues
+  nameWithType: SortedLimitedList<TKey, TValue>.GetValues
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).GetValues
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.IndexOfKey(`0)
+  name: IndexOfKey(TKey)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_IndexOfKey__0_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.IndexOfKey(`0)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.IndexOfKey(TKey)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).IndexOfKey(TKey)
+  nameWithType: SortedLimitedList<TKey, TValue>.IndexOfKey(TKey)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).IndexOfKey(TKey)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.IndexOfKey*
+  name: IndexOfKey
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_IndexOfKey_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.IndexOfKey
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.IndexOfKey
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).IndexOfKey
+  nameWithType: SortedLimitedList<TKey, TValue>.IndexOfKey
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).IndexOfKey
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.IndexOfValue(`1)
+  name: IndexOfValue(TValue)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_IndexOfValue__1_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.IndexOfValue(`1)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.IndexOfValue(TValue)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).IndexOfValue(TValue)
+  nameWithType: SortedLimitedList<TKey, TValue>.IndexOfValue(TValue)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).IndexOfValue(TValue)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.IndexOfValue*
+  name: IndexOfValue
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_IndexOfValue_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.IndexOfValue
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.IndexOfValue
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).IndexOfValue
+  nameWithType: SortedLimitedList<TKey, TValue>.IndexOfValue
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).IndexOfValue
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Item(`0)
+  name: Item[TKey]
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Item__0_
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Item(`0)
+  name.vb: Item(TKey)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Item[TKey]
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Item(TKey)
+  nameWithType: SortedLimitedList<TKey, TValue>.Item[TKey]
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Item(TKey)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Item*
+  name: Item
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Item_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Item
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Item
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Item
+  nameWithType: SortedLimitedList<TKey, TValue>.Item
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Item
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList
+  name: SortedLimitedList<TKey, TValue>.KeyList
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html
+  commentId: T:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList
+  name.vb: SortedLimitedList(Of TKey, TValue).KeyList
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Add(`0)
+  name: Add(TKey)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Add__0_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Add(`0)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Add(TKey)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Add(TKey)
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Add(TKey)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Add(TKey)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Add*
+  name: Add
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Add_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Add
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Add
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Add
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Add
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Add
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Clear
+  name: Clear()
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Clear
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Clear
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Clear()
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Clear()
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Clear()
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Clear()
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Clear*
+  name: Clear
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Clear_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Clear
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Clear
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Clear
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Clear
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Clear
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Contains(`0)
+  name: Contains(TKey)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Contains__0_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Contains(`0)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Contains(TKey)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Contains(TKey)
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Contains(TKey)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Contains(TKey)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Contains*
+  name: Contains
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Contains_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Contains
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Contains
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Contains
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Contains
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Contains
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.CopyTo(`0[],System.Int32)
+  name: CopyTo(TKey[], Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_CopyTo__0___System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(TKey(), Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.CopyTo(TKey[], System.Int32)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.CopyTo(TKey(), System.Int32)
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.CopyTo(TKey[], Int32)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.CopyTo(TKey(), Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.CopyTo*
+  name: CopyTo
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_CopyTo_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.CopyTo
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.CopyTo
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.CopyTo
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.CopyTo
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.CopyTo
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Count
+  name: Count
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Count
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Count
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Count
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Count
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Count
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Count
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Count*
+  name: Count
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Count_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Count
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Count
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Count
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Count
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Count
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.GetEnumerator
+  name: GetEnumerator()
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_GetEnumerator
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.GetEnumerator
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.GetEnumerator()
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.GetEnumerator()
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.GetEnumerator()
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.GetEnumerator()
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.GetEnumerator*
+  name: GetEnumerator
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_GetEnumerator_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.GetEnumerator
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.GetEnumerator
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.GetEnumerator
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.GetEnumerator
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.GetEnumerator
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.IndexOf(`0)
+  name: IndexOf(TKey)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_IndexOf__0_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.IndexOf(`0)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.IndexOf(TKey)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.IndexOf(TKey)
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.IndexOf(TKey)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.IndexOf(TKey)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.IndexOf*
+  name: IndexOf
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_IndexOf_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.IndexOf
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.IndexOf
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.IndexOf
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.IndexOf
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.IndexOf
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Insert(System.Int32,`0)
+  name: Insert(Int32, TKey)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Insert_System_Int32__0_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Insert(System.Int32,`0)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Insert(System.Int32, TKey)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Insert(System.Int32, TKey)
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Insert(Int32, TKey)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Insert(Int32, TKey)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Insert*
+  name: Insert
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Insert_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Insert
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Insert
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Insert
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Insert
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Insert
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.IsReadOnly
+  name: IsReadOnly
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_IsReadOnly
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.IsReadOnly
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.IsReadOnly
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.IsReadOnly
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.IsReadOnly
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.IsReadOnly
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.IsReadOnly*
+  name: IsReadOnly
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_IsReadOnly_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.IsReadOnly
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.IsReadOnly
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.IsReadOnly
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.IsReadOnly
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.IsReadOnly
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Item(System.Int32)
+  name: Item[Int32]
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Item_System_Int32_
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Item[System.Int32]
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Item(System.Int32)
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Item[Int32]
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Item(Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Item*
+  name: Item
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Item_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Item
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Item
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Item
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Item
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Item
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Remove(`0)
+  name: Remove(TKey)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Remove__0_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Remove(`0)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Remove(TKey)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Remove(TKey)
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Remove(TKey)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Remove(TKey)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Remove*
+  name: Remove
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_Remove_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.Remove
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.Remove
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.Remove
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.Remove
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.Remove
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_RemoveAt_System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.RemoveAt(System.Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.RemoveAt(System.Int32)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.RemoveAt(System.Int32)
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.RemoveAt(Int32)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.RemoveAt(Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.RemoveAt*
+  name: RemoveAt
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.KeyList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_KeyList_RemoveAt_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.KeyList.RemoveAt
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.KeyList.RemoveAt
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).KeyList.RemoveAt
+  nameWithType: SortedLimitedList<TKey, TValue>.KeyList.RemoveAt
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).KeyList.RemoveAt
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Keys
+  name: Keys
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Keys
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Keys
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Keys
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Keys
+  nameWithType: SortedLimitedList<TKey, TValue>.Keys
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Keys
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Keys*
+  name: Keys
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Keys_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Keys
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Keys
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Keys
+  nameWithType: SortedLimitedList<TKey, TValue>.Keys
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Keys
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Remove(`0)
+  name: Remove(TKey)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Remove__0_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Remove(`0)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Remove(TKey)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Remove(TKey)
+  nameWithType: SortedLimitedList<TKey, TValue>.Remove(TKey)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Remove(TKey)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Remove*
+  name: Remove
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Remove_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Remove
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Remove
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Remove
+  nameWithType: SortedLimitedList<TKey, TValue>.Remove
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Remove
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_RemoveAt_System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.RemoveAt(System.Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.RemoveAt(System.Int32)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).RemoveAt(System.Int32)
+  nameWithType: SortedLimitedList<TKey, TValue>.RemoveAt(Int32)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).RemoveAt(Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.RemoveAt*
+  name: RemoveAt
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_RemoveAt_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.RemoveAt
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.RemoveAt
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).RemoveAt
+  nameWithType: SortedLimitedList<TKey, TValue>.RemoveAt
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).RemoveAt
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.TrimExcess
+  name: TrimExcess()
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_TrimExcess
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.TrimExcess
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.TrimExcess()
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).TrimExcess()
+  nameWithType: SortedLimitedList<TKey, TValue>.TrimExcess()
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).TrimExcess()
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.TrimExcess*
+  name: TrimExcess
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_TrimExcess_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.TrimExcess
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.TrimExcess
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).TrimExcess
+  nameWithType: SortedLimitedList<TKey, TValue>.TrimExcess
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).TrimExcess
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.TryGetValue(`0,`1@)
+  name: TryGetValue(TKey, out TValue)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_TryGetValue__0__1__
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.TryGetValue(`0,`1@)
+  name.vb: TryGetValue(TKey, ByRef TValue)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).TryGetValue(TKey, ByRef TValue)
+  nameWithType: SortedLimitedList<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).TryGetValue(TKey, ByRef TValue)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.TryGetValue*
+  name: TryGetValue
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_TryGetValue_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.TryGetValue
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.TryGetValue
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).TryGetValue
+  nameWithType: SortedLimitedList<TKey, TValue>.TryGetValue
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).TryGetValue
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList
+  name: SortedLimitedList<TKey, TValue>.ValueList
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html
+  commentId: T:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList
+  name.vb: SortedLimitedList(Of TKey, TValue).ValueList
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Add(`1)
+  name: Add(TValue)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Add__1_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Add(`1)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Add(TValue)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Add(TValue)
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Add(TValue)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Add(TValue)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Add*
+  name: Add
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Add_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Add
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Add
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Add
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Add
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Add
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Clear
+  name: Clear()
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Clear
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Clear
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Clear()
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Clear()
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Clear()
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Clear()
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Clear*
+  name: Clear
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Clear_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Clear
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Clear
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Clear
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Clear
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Clear
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Contains(`1)
+  name: Contains(TValue)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Contains__1_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Contains(`1)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Contains(TValue)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Contains(TValue)
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Contains(TValue)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Contains(TValue)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Contains*
+  name: Contains
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Contains_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Contains
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Contains
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Contains
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Contains
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Contains
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.CopyTo(`1[],System.Int32)
+  name: CopyTo(TValue[], Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_CopyTo__1___System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.CopyTo(`1[],System.Int32)
+  name.vb: CopyTo(TValue(), Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.CopyTo(TValue[], System.Int32)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.CopyTo(TValue(), System.Int32)
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.CopyTo(TValue[], Int32)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.CopyTo(TValue(), Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.CopyTo*
+  name: CopyTo
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_CopyTo_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.CopyTo
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.CopyTo
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.CopyTo
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.CopyTo
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.CopyTo
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Count
+  name: Count
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Count
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Count
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Count
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Count
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Count
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Count
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Count*
+  name: Count
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Count_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Count
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Count
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Count
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Count
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Count
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.GetEnumerator
+  name: GetEnumerator()
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_GetEnumerator
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.GetEnumerator
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.GetEnumerator()
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.GetEnumerator()
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.GetEnumerator()
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.GetEnumerator()
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.GetEnumerator*
+  name: GetEnumerator
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_GetEnumerator_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.GetEnumerator
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.GetEnumerator
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.GetEnumerator
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.GetEnumerator
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.GetEnumerator
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.IndexOf(`1)
+  name: IndexOf(TValue)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_IndexOf__1_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.IndexOf(`1)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.IndexOf(TValue)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.IndexOf(TValue)
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.IndexOf(TValue)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.IndexOf(TValue)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.IndexOf*
+  name: IndexOf
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_IndexOf_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.IndexOf
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.IndexOf
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.IndexOf
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.IndexOf
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.IndexOf
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Insert(System.Int32,`1)
+  name: Insert(Int32, TValue)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Insert_System_Int32__1_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Insert(System.Int32,`1)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Insert(System.Int32, TValue)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Insert(System.Int32, TValue)
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Insert(Int32, TValue)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Insert(Int32, TValue)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Insert*
+  name: Insert
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Insert_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Insert
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Insert
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Insert
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Insert
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Insert
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.IsReadOnly
+  name: IsReadOnly
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_IsReadOnly
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.IsReadOnly
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.IsReadOnly
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.IsReadOnly
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.IsReadOnly
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.IsReadOnly
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.IsReadOnly*
+  name: IsReadOnly
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_IsReadOnly_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.IsReadOnly
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.IsReadOnly
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.IsReadOnly
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.IsReadOnly
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.IsReadOnly
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Item(System.Int32)
+  name: Item[Int32]
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Item_System_Int32_
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Item[System.Int32]
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Item(System.Int32)
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Item[Int32]
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Item(Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Item*
+  name: Item
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Item_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Item
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Item
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Item
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Item
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Item
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Remove(`1)
+  name: Remove(TValue)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Remove__1_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Remove(`1)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Remove(TValue)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Remove(TValue)
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Remove(TValue)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Remove(TValue)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Remove*
+  name: Remove
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_Remove_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.Remove
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.Remove
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.Remove
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.Remove
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.Remove
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_RemoveAt_System_Int32_
+  commentId: M:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.RemoveAt(System.Int32)
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.RemoveAt(System.Int32)
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.RemoveAt(System.Int32)
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.RemoveAt(Int32)
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.RemoveAt(Int32)
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.RemoveAt*
+  name: RemoveAt
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.ValueList.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_ValueList_RemoveAt_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.ValueList.RemoveAt
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.ValueList.RemoveAt
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).ValueList.RemoveAt
+  nameWithType: SortedLimitedList<TKey, TValue>.ValueList.RemoveAt
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).ValueList.RemoveAt
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Values
+  name: Values
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Values
+  commentId: P:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Values
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Values
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Values
+  nameWithType: SortedLimitedList<TKey, TValue>.Values
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Values
+- uid: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Values*
+  name: Values
+  href: api/AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList-2.html#AltV_Net_EntitySync_SpatialPartitions_SortedLimitedList_2_Values_
+  commentId: Overload:AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList`2.Values
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList<TKey, TValue>.Values
+  fullName.vb: AltV.Net.EntitySync.SpatialPartitions.SortedLimitedList(Of TKey, TValue).Values
+  nameWithType: SortedLimitedList<TKey, TValue>.Values
+  nameWithType.vb: SortedLimitedList(Of TKey, TValue).Values
 - uid: AltV.Net.EntitySync.SpatialPartitions.SpatialPartition
   name: SpatialPartition
   href: api/AltV.Net.EntitySync.SpatialPartitions.SpatialPartition.html
@@ -27836,6 +28819,38 @@ references:
   isSpec: "True"
   fullName: AltV.Net.EntitySync.Tests.Grid2Tests.Setup
   nameWithType: Grid2Tests.Setup
+- uid: AltV.Net.EntitySync.Tests.Grid3Tests
+  name: Grid3Tests
+  href: api/AltV.Net.EntitySync.Tests.Grid3Tests.html
+  commentId: T:AltV.Net.EntitySync.Tests.Grid3Tests
+  fullName: AltV.Net.EntitySync.Tests.Grid3Tests
+  nameWithType: Grid3Tests
+- uid: AltV.Net.EntitySync.Tests.Grid3Tests.AddTest
+  name: AddTest()
+  href: api/AltV.Net.EntitySync.Tests.Grid3Tests.html#AltV_Net_EntitySync_Tests_Grid3Tests_AddTest
+  commentId: M:AltV.Net.EntitySync.Tests.Grid3Tests.AddTest
+  fullName: AltV.Net.EntitySync.Tests.Grid3Tests.AddTest()
+  nameWithType: Grid3Tests.AddTest()
+- uid: AltV.Net.EntitySync.Tests.Grid3Tests.AddTest*
+  name: AddTest
+  href: api/AltV.Net.EntitySync.Tests.Grid3Tests.html#AltV_Net_EntitySync_Tests_Grid3Tests_AddTest_
+  commentId: Overload:AltV.Net.EntitySync.Tests.Grid3Tests.AddTest
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.Tests.Grid3Tests.AddTest
+  nameWithType: Grid3Tests.AddTest
+- uid: AltV.Net.EntitySync.Tests.Grid3Tests.Setup
+  name: Setup()
+  href: api/AltV.Net.EntitySync.Tests.Grid3Tests.html#AltV_Net_EntitySync_Tests_Grid3Tests_Setup
+  commentId: M:AltV.Net.EntitySync.Tests.Grid3Tests.Setup
+  fullName: AltV.Net.EntitySync.Tests.Grid3Tests.Setup()
+  nameWithType: Grid3Tests.Setup()
+- uid: AltV.Net.EntitySync.Tests.Grid3Tests.Setup*
+  name: Setup
+  href: api/AltV.Net.EntitySync.Tests.Grid3Tests.html#AltV_Net_EntitySync_Tests_Grid3Tests_Setup_
+  commentId: Overload:AltV.Net.EntitySync.Tests.Grid3Tests.Setup
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.Tests.Grid3Tests.Setup
+  nameWithType: Grid3Tests.Setup
 - uid: AltV.Net.EntitySync.Tests.GridTests
   name: GridTests
   href: api/AltV.Net.EntitySync.Tests.GridTests.html
@@ -27881,6 +28896,38 @@ references:
   isSpec: "True"
   fullName: AltV.Net.EntitySync.Tests.GridTests.Setup
   nameWithType: GridTests.Setup
+- uid: AltV.Net.EntitySync.Tests.LimitedGrid3Tests
+  name: LimitedGrid3Tests
+  href: api/AltV.Net.EntitySync.Tests.LimitedGrid3Tests.html
+  commentId: T:AltV.Net.EntitySync.Tests.LimitedGrid3Tests
+  fullName: AltV.Net.EntitySync.Tests.LimitedGrid3Tests
+  nameWithType: LimitedGrid3Tests
+- uid: AltV.Net.EntitySync.Tests.LimitedGrid3Tests.AddTest
+  name: AddTest()
+  href: api/AltV.Net.EntitySync.Tests.LimitedGrid3Tests.html#AltV_Net_EntitySync_Tests_LimitedGrid3Tests_AddTest
+  commentId: M:AltV.Net.EntitySync.Tests.LimitedGrid3Tests.AddTest
+  fullName: AltV.Net.EntitySync.Tests.LimitedGrid3Tests.AddTest()
+  nameWithType: LimitedGrid3Tests.AddTest()
+- uid: AltV.Net.EntitySync.Tests.LimitedGrid3Tests.AddTest*
+  name: AddTest
+  href: api/AltV.Net.EntitySync.Tests.LimitedGrid3Tests.html#AltV_Net_EntitySync_Tests_LimitedGrid3Tests_AddTest_
+  commentId: Overload:AltV.Net.EntitySync.Tests.LimitedGrid3Tests.AddTest
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.Tests.LimitedGrid3Tests.AddTest
+  nameWithType: LimitedGrid3Tests.AddTest
+- uid: AltV.Net.EntitySync.Tests.LimitedGrid3Tests.Setup
+  name: Setup()
+  href: api/AltV.Net.EntitySync.Tests.LimitedGrid3Tests.html#AltV_Net_EntitySync_Tests_LimitedGrid3Tests_Setup
+  commentId: M:AltV.Net.EntitySync.Tests.LimitedGrid3Tests.Setup
+  fullName: AltV.Net.EntitySync.Tests.LimitedGrid3Tests.Setup()
+  nameWithType: LimitedGrid3Tests.Setup()
+- uid: AltV.Net.EntitySync.Tests.LimitedGrid3Tests.Setup*
+  name: Setup
+  href: api/AltV.Net.EntitySync.Tests.LimitedGrid3Tests.html#AltV_Net_EntitySync_Tests_LimitedGrid3Tests_Setup_
+  commentId: Overload:AltV.Net.EntitySync.Tests.LimitedGrid3Tests.Setup
+  isSpec: "True"
+  fullName: AltV.Net.EntitySync.Tests.LimitedGrid3Tests.Setup
+  nameWithType: LimitedGrid3Tests.Setup
 - uid: AltV.Net.EntitySync.Tests.LimitedGridTests
   name: LimitedGridTests
   href: api/AltV.Net.EntitySync.Tests.LimitedGridTests.html

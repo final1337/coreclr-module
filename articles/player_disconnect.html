@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Player Events </title>
+    <title>OnPlayerDisconnect </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Player Events ">
+    <meta name="title" content="OnPlayerDisconnect ">
     <meta name="generator" content="docfx 2.49.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,9 +67,25 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="player-events">Player Events</h1>
+<h1 id="onplayerdisconnect">OnPlayerDisconnect</h1>
 
-<p>This section contains a list of articles about the player events.</p>
+<p>This event will be called if a player disconnect.
+Note : Events have to be created in a IScript Class! Otherwise it won´t work!</p>
+<pre><code class="lang-csharp">    public class AltV_Wiki : IScript
+    {
+        /* We declare &amp; Create our Event Handler. */
+        [ScriptEvent(ScriptEventType.PlayerDisconnect)]
+        public void OnPlayerDisconnect(IPlayer client, string reason)
+        {
+            // We loop through every player on our Server &amp; Notify them.
+            foreach(IPlayer players in Alt.GetAllPlayers())
+            {
+                //We notify everyone that our Client has left the Server.
+                players.SendChatMessage(client?.Name + &quot; has left the Server! Reason &quot; + reason);
+            }
+        }
+    }
+</code></pre>
 </article>
           </div>
           
@@ -78,7 +94,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0e566a71836d180fb5186376692525a048c7c0ed/docs/articles/player_events.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/0e566a71836d180fb5186376692525a048c7c0ed/docs/articles/player_disconnect.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

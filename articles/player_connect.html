@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Performance debugging </title>
+    <title>OnPlayerConnect </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Performance debugging ">
+    <meta name="title" content="OnPlayerConnect ">
     <meta name="generator" content="docfx 2.49.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,52 +67,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="performance-debugging">Performance debugging</h1>
+<h1 id="onplayerconnect">OnPlayerConnect</h1>
 
-<p>This article will describe how to debug performance issues in your gamemode.</p>
-<h2 id="alttrace">AltTrace</h2>
-<p>The AltV.Net nuget package provides a api to gamemodes for recording trace files. You can only write one trace file at the same time.</p>
-<p>The following code is starting writing a trace file.</p>
-<pre><code class="lang-csharp">AltTrace.Start(&quot;traceFileName&quot;);
-</code></pre>
-<p>This code stops writing a trace file.</p>
-<pre><code class="lang-csharp">AltTrace.Stop();
-</code></pre>
-<p>You can also register a callback to know the size of the trace file while its written.</p>
-<pre><code class="lang-csharp">AltTrace.OnTraceFileSizeChange += size =&gt;
-{
- Console.WriteLine(&quot;Trace file size:&quot; + size + &quot; bytes.&quot;);                
-};
-</code></pre>
-<p>The trace file will be written to altv server directory. The trace file can be opened via visual studio 2019 or perfview on windows.</p>
-<p>The easiest way to trigger starting and stopping a trace file recording is to register a server side command.</p>
-<p>Some sample snippet</p>
-<pre><code class="lang-csharp">long currentTraceSize = 0;
-AltTrace.OnTraceFileSizeChange += size =&gt;
-  {
-    currentTraceSize = size;
-  };
-            
-  Alt.OnConsoleCommand += (name, args) =&gt;
+<p>This event will be called if a player connect.
+Note : Events have to be created in a IScript Class! Otherwise it won´t work!</p>
+<pre><code class="lang-csharp">    /* We create our IScript class */
+    public class AltV_Wiki : IScript
     {
-      switch (name)
-      {
-        case &quot;trace_start&quot;:
-          if (args.Length != 1)
-          {
-            Console.WriteLine(&quot;trace_start {name}&quot;);
-            return;
-          }
-          AltTrace.Start(args[0]);
-          break;
-        case &quot;trace_stop&quot;:
-          AltTrace.Stop();
-          break;
-        case &quot;trace_size&quot;:
-          Console.WriteLine(&quot;trace file size: &quot; + currentTraceSize + &quot; bytes&quot;);
-          break;
-      }
-  };
+        /* We declare &amp; Create our Event Handler. */
+        [ScriptEvent(ScriptEventType.PlayerConnect)]
+        public void OnPlayerConnect(IPlayer client, string reason)
+        {
+            // We loop through every player on our Server &amp; Notify them.
+            foreach(IPlayer players in Alt.GetAllPlayers())
+            {
+                //We notify everyone that our Client has left the Server.
+                players.SendChatMessage(client?.Name + &quot; has joined the Server!&quot;);
+            }
+            //We spawn our Connected Client after 1 sec.
+            client.Spawn(new Position(0, 0, 72));
+            // We set his Skin to the standard GTA Online Skin.
+            client.Model = Alt.Hash(&quot;FreemodeMale01&quot;);
+        }
+    }
 </code></pre>
 </article>
           </div>
@@ -122,7 +99,7 @@ AltTrace.OnTraceFileSizeChange += size =&gt;
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/16d5950bccddf233085f4f6a37ccb59ed35da2d3/docs/articles/trace.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/16d5950bccddf233085f4f6a37ccb59ed35da2d3/docs/articles/player_connect.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

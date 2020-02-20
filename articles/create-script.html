@@ -72,7 +72,7 @@
 <p>Make sure you have <a href="https://fabianterhorst.github.io/coreclr-module/articles/create-resource.html">created a resource</a> before.</p>
 <p>Classes that extend IScript are getting auto initiaized.</p>
 <p>MyScript.cs</p>
-<pre><code class="lang-csharp">using System;
+<pre><code class="lang-cs">using System;
 
 namespace My.Package
 {
@@ -83,7 +83,7 @@ namespace My.Package
 </code></pre>
 <p>Scripts can register event handlers via method attributes.</p>
 <p>For adding a player connect handler. The method name doesn't matter for script events.</p>
-<pre><code class="lang-csharp">[ScriptEvent(ScriptEventType.PlayerConnect)]
+<pre><code class="lang-cs">[ScriptEvent(ScriptEventType.PlayerConnect)]
 public void PlayerConnect(IPlayer player, string reason)
 {
   player.SetDateTime(DateTime.Now);
@@ -91,7 +91,7 @@ public void PlayerConnect(IPlayer player, string reason)
 }
 </code></pre>
 <p>For adding a custom event handler. The method name is used as a event name when its not defined in the attribute.</p>
-<pre><code class="lang-csharp">// Here the event name is 'MyEventName'
+<pre><code class="lang-cs">// Here the event name is 'MyEventName'
 [Event(&quot;MyEventName&quot;)]
 public static void MyEventName2(string message)
 {
@@ -114,7 +114,7 @@ public static void MyCustomEvent(string message)
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/54835303fbf5404749916f600a2d3088e8a3b19f/docs/articles/create-script.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/95471ef855d2e912c4fb6cb61180967bce38d175/docs/articles/create-script.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

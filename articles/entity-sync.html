@@ -75,22 +75,25 @@
 <a href="https://www.nuget.org/packages/AltV.Net.EntitySync">https://www.nuget.org/packages/AltV.Net.EntitySync</a> // The core package with the sync logic
 <a href="https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent">https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent</a> // A optional package that will send the entity sync events to the client via server events</p>
 <h2 id="configure-the-entity-sync">Configure the Entity Sync</h2>
-<pre><code class="lang-csharp">
-AltEntitySync.Init(1, 100,
+<pre><code class="lang-csharp">AltEntitySync.Init(1, 500,
    repository =&gt; new ServerEventNetworkLayer(repository),
-   () =&gt; new LimitedGrid3(50_000, 50_000, 100, 10_000, 10_000, 600),
+   (entity, threadCount) =&gt; (entity.Id % threadCount), 
+   (entityId, entityType, threadCount) =&gt; (entityId % threadCount),
+   (threadId) =&gt; new LimitedGrid3(50_000, 50_000, 100, 10_000, 10_000, 600),
    new IdProvider());
 </code></pre>
 <p>Now breakdown the parameters of the Init function:</p>
 <p>The first parameter is the thread count, this describes the number of thats that will run in parallel to calculate the streamed entities.</p>
 <p>The second parameter is the sync rate, it describes the interval in which each sync thread calculates the streamed entities.</p>
 <p>The third parameter is the Action that returns a new NetworkLayer for a repository. The ServerEventNetworkLayer is part of the second nuget package.</p>
-<p>The fourth parameter is the Action that returns a new space partitioning algorithm for each sync thread. The LimitedGrid3 is one of the algorithms that comes included in the core.
+<p>The fourth parameter defines the thread the entity shoud use.</p>
+<p>The fifth parameter defines the thread a entityId + entityType should use.</p>
+<p>The sixth parameter is the Action that returns a new space partitioning algorithm for each specific sync thread id. The LimitedGrid3 is one of the algorithms that comes included in the core.
 LimitedGrid3 has following parameters: (int maxX, int maxY, int areaSize, int xOffset, int yOffset, int limit).
 The (int maxX, int maxY) parameters are defining the size of the map the grid is inserting, removing and finding entities in. The default values are defining the default gta 5 map.
 The two offsets (int xOffset, int yOffset) preventing the corrdinates to become negative, because the gta maps goes from -10k to 50k.
 The (int limit) makes sure a client can only have streamed in the amount of entities he can actually render. E.g. the gta 5 client in altv can only create around 600 Objects without stability issues.</p>
-<p>The fifth and last parameter is the id provider that increments the entity ids incremental and free's unused ids. The IdProvider is included inside the core package as well.</p>
+<p>The seventh and last parameter is the id provider that increments the entity ids incremental and free's unused ids. The IdProvider is included inside the core package as well.</p>
 <h2 id="add-entities">Add Entities</h2>
 <p>To add entities that can be streamed there are two ways.</p>
 <p>The easiert way is to use the CreateEntity method from AltEntitySync.</p>
@@ -199,7 +202,7 @@ Each type that works with <a href="https://fabianterhorst.github.io/coreclr-modu
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/95471ef855d2e912c4fb6cb61180967bce38d175/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d62845adf470acaee6337c5b77c824537127e207/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

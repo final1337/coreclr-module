@@ -91,16 +91,30 @@ public void PlayerConnect(IPlayer player, string reason)
 }
 </code></pre>
 <p>For adding a custom event handler. The method name is used as a event name when its not defined in the attribute.</p>
-<pre><code class="lang-cs">// Here the event name is 'MyEventName'
-[Event(&quot;MyEventName&quot;)]
+<pre><code class="lang-cs">// Here the event name is 'MyEventName' and the event handler receives server events
+[ServerEvent(&quot;MyEventName&quot;)]
 public static void MyEventName2(string message)
 {
   Console.WriteLine(message);
 }
 
-// Here the event name is 'MyCustomEvent'
-[Event]
+// Here the event name is 'MyCustomEvent' and the event handler receives server events
+[ServerEvent]
 public static void MyCustomEvent(string message)
+{
+  Console.WriteLine(message);
+}
+
+// Here the event name is 'MyClientEventName' and the event handler receives client events
+[ClientEvent(&quot;MyClientEventName&quot;)]
+public static void MyClientEventName2(string message)
+{
+  Console.WriteLine(message);
+}
+
+// Here the event name is 'MyClientCustomEvent' and the event handler receives client events
+[ClientEvent]
+public static void MyClientCustomEvent(string message)
 {
   Console.WriteLine(message);
 }
@@ -114,7 +128,7 @@ public static void MyCustomEvent(string message)
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d62845adf470acaee6337c5b77c824537127e207/docs/articles/create-script.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1311d4b4519b965ae6411391861ad74ffa4051fd/docs/articles/create-script.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

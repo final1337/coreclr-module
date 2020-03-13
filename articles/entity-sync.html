@@ -8,7 +8,7 @@
     <title>Entity Sync </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Entity Sync ">
-    <meta name="generator" content="docfx 2.49.0.0">
+    <meta name="generator" content="docfx 2.50.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -75,7 +75,7 @@
 <a href="https://www.nuget.org/packages/AltV.Net.EntitySync">https://www.nuget.org/packages/AltV.Net.EntitySync</a> // The core package with the sync logic
 <a href="https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent">https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent</a> // A optional package that will send the entity sync events to the client via server events</p>
 <h2 id="configure-the-entity-sync">Configure the Entity Sync</h2>
-<pre><code class="lang-csharp">AltEntitySync.Init(1, 500,
+<pre><code class="lang-csharp">AltEntitySync.Init(1, 100,
    repository =&gt; new ServerEventNetworkLayer(repository),
    (entity, threadCount) =&gt; (entity.Id % threadCount), 
    (entityId, entityType, threadCount) =&gt; (entityId % threadCount),
@@ -149,48 +149,69 @@ Each type that works with <a href="https://fabianterhorst.github.io/coreclr-modu
 <h3 id="entity-create">Entity create</h3>
 <p>This is called every time you come in the range of the entity.</p>
 <p>The server assumes you cache the entity depending on the entity.id so make sure to do it.</p>
-<pre><code class="lang-js">alt.onServer(&quot;entitySync:create&quot;, entity =&gt; {
-    alt.log(entity.id);
-    alt.log(entity.type);
-    alt.log(entity.position);
-    alt.log(entity.data);
-    if (entity.data) {
-      entityData[entity.id] = entity.data;
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:create&quot;, (entityId, entityType, position, entityData) =&gt; {
+    alt.log(entityId);
+    alt.log(entityType);
+    alt.log(position);
+    alt.log(entityData);
+    if (entityData) {
+      if (!entityData[entityType]) {
+         entityData[entityType] = {};
+      }
+      entityData[entityType][entityId] = entityData;
     }
 })
 </code></pre>
 <h3 id="entity-remove">Entity remove</h3>
 <p>This is called every time you go out of the range of the entity.</p>
-<pre><code class="lang-js">alt.onServer(&quot;entitySync:remove&quot;, entityId =&gt; {
-    const entityData = entityData[entityId];
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:remove&quot;, (entityId, entityType) =&gt; {
+    const entityData;
+    if (entityData[entityType]) {
+         entityData = entityData[entityType][entityId];
+    } else {
+         entityData = null;
+    }
     alt.log(entityId);
+    alt.log(entityType);
     alt.log(entityData);
 })
 </code></pre>
 <h3 id="entity-position-update">Entity position update</h3>
 <p>This is called very time you update the entity position while you are in the range of the entity.</p>
-<pre><code class="lang-js">alt.onServer(&quot;entitySync:updatePosition&quot;, (entityId, position) =&gt; {
-    const entityData = entityData[entityId];
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:updatePosition&quot;, (entityId, entityType, position) =&gt; {
+    const entityData;
+    if (entityData[entityType]) {
+         entityData = entityData[entityType][entityId];
+    } else {
+         entityData = null;
+    }
     alt.log(entityId);
+    alt.log(entityType);
     alt.log(entityData);
 })
 </code></pre>
 <h3 id="entity-data-update">Entity data update</h3>
 <p>This is called every time you update the entity data while you are in the range of the entity.</p>
-<pre><code class="lang-js">alt.onServer(&quot;entitySync:updateData&quot;, (entityId, newEntityData) =&gt; {
-    let entityData = entityData[entityId];
-    if (!entityData) {
-        entityData = {};
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:updateData&quot;, (entityId, entityType, newEntityData) =&gt; {
+    if (!entityData[entityType]) {
+       entityData[entityType] = {};
+    }
+    let currEntityData = entityData[entityType][entityId];
+    if (!currEntityData) {
+         entityData[entityType][entityId] = {};
     }
     for (const key in newEntityData) {
-        entityData[key] = newEntityData[key];
+        entityData[entityType][entityId][key] = newEntityData[key];
     }
 })
 </code></pre>
 <h3 id="entity-clear-cache">Entity clear cache</h3>
 <p>This is called every time you remove a entity on serverside completely and clients still have data in cache of this entity.</p>
-<pre><code class="lang-js">alt.onServer(&quot;entitySync:clearCache&quot;, entityId =&gt; {
-    delete entityData[entityId];
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:clearCache&quot;, (entityId, entityType) =&gt; {
+    if (!entityData[entityType]) {
+      return;
+    }
+    delete entityData[entityType][entityId];
 })
 </code></pre>
 <p>Now you can call your own logic inside the events to spawn objects, npcs, 3d text, markers, ... ect.</p>
@@ -202,7 +223,7 @@ Each type that works with <a href="https://fabianterhorst.github.io/coreclr-modu
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1311d4b4519b965ae6411391861ad74ffa4051fd/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/fab9a14e051bf267b4091a0271e2db56b594785c/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

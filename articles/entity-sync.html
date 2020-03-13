@@ -76,7 +76,7 @@
 <a href="https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent">https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent</a> // A optional package that will send the entity sync events to the client via server events</p>
 <h2 id="configure-the-entity-sync">Configure the Entity Sync</h2>
 <pre><code class="lang-csharp">AltEntitySync.Init(1, 100,
-   repository =&gt; new ServerEventNetworkLayer(repository),
+   (threadCount, repository) =&gt; new ServerEventNetworkLayer(threadCount, repository),
    (entity, threadCount) =&gt; (entity.Id % threadCount), 
    (entityId, entityType, threadCount) =&gt; (entityId % threadCount),
    (threadId) =&gt; new LimitedGrid3(50_000, 50_000, 100, 10_000, 10_000, 600),
@@ -223,7 +223,7 @@ Each type that works with <a href="https://fabianterhorst.github.io/coreclr-modu
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/12f18806f241f97748b3b678eb6101b338ffd3fa/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/2431fc1659550b6567170d9c86d3fc836569e962/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

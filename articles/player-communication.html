@@ -73,7 +73,9 @@
 <p>The first way is to use <code>Alt.EmitAllClients(eventName, args)</code> to send data to all connected clients.</p>
 <p>The second way sends data to a specific player directly via <code>player.Emit(eventName, args)</code>.</p>
 <p>args expects a <code>object[]</code>.</p>
-<p>Supported arguments types inside the array are <code>object</code>, <code>bool</code>, <code>int</code>, <code>long</code>, <code>uint</code>, <code>ulong</code>, <code>float</code>, <code>double</code>, <code>string</code>, <code>IPlayer</code> (or any types extending IPlayer), <code>IVehicle</code> (or any types extending IVehicle), <code>Dictionary&lt;string, (any type listed here)</code>, <code>Alt.Function</code>, any type listed here as array e.g. int[].
+<p>Supported arguments types inside the array are <code>object</code>, <code>bool</code>, <code>int</code>, <code>long</code>, <code>uint</code>, <code>ulong</code>, <code>float</code>, <code>double</code>, <code>string</code>, <code>IPlayer</code> (or any types extending IPlayer), <code>IVehicle</code> (or any types extending IVehicle),
+<code>Vector3</code>, <code>Rotation</code>, <code>Position</code>, <code>IBlip</code> (or any types extending IBlip), <code>IVoiceChannel</code> (or any types extending IVoiceChannel), <code>IColShape</code> (or any types extending IColShape), <code>ICheckpoint</code> (or any types extending ICheckpoint)
+<code>Dictionary&lt;string, (any type listed here)</code>, <code>Alt.Function</code>, any type listed here as array e.g. int[].
 Also any dictionary in dictionary, array in array, ect. endless depth types are supported, because they are resolved recursively.</p>
 <h2 id="clientside">Clientside</h2>
 <p>To catch the event inside clientside javascript.</p>
@@ -101,7 +103,7 @@ alt.emitServer(eventName, args);
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/9e1348ccc26bf974466bae3fdc9c23461a13b324/docs/articles/player-communication.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/5ae685c3f9ac31ea4c274f69ee928d443a9c73ca/docs/articles/player-communication.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

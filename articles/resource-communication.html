@@ -72,7 +72,7 @@
 <p>This article will describe how to communicate between different server resources.</p>
 <h2 id="exports">Exports</h2>
 <p>Resources can define data that other resources can access while the resource is starting. This data is immutable after resource finished starting and can be accessed from any serverside resource.</p>
-<pre><code class="lang-csharp">public class SampleResource : AsyncResource
+<pre><code class="lang-cs">public class SampleResource : AsyncResource
 {
   public override void OnStart()
   {
@@ -85,7 +85,7 @@
 Also any dictionary in dictionary, array in array, ect. endless depth types are supported, because they are resolved recursively.</p>
 <h3 id="export-functions">Export functions</h3>
 <p>Functions are also possible to export. Supported function parameters are same types supported by events and exports.</p>
-<pre><code class="lang-csharp">public class SampleResource : AsyncResource
+<pre><code class="lang-cs">public class SampleResource : AsyncResource
 {
   public override void OnStart()
   {
@@ -108,7 +108,7 @@ Also any dictionary in dictionary, array in array, ect. endless depth types are 
 <h2 id="imports">Imports</h2>
 <p>Resources can import data that got exported from other resources. Most likely you will define the resource where you import from as <code>deps: [ myResource, myResource2 ]</code> in your <code>resource.cfg</code> to make sure the resource is already started when your resource starts.
 You also have to define the resource name where you import data from.</p>
-<pre><code class="lang-csharp">public class SampleResource : AsyncResource
+<pre><code class="lang-cs">public class SampleResource : AsyncResource
 {
   public override void OnStart()
   {
@@ -119,7 +119,7 @@ You also have to define the resource name where you import data from.</p>
 }
 </code></pre>
 <p>This works the same with functions that return data. The return type is always the last generic type in <code>Func&lt;...&gt;</code>.</p>
-<pre><code class="lang-csharp">public class SampleResource : AsyncResource
+<pre><code class="lang-cs">public class SampleResource : AsyncResource
 {
   public override void OnStart()
   {
@@ -133,7 +133,7 @@ You also have to define the resource name where you import data from.</p>
 <p>Another way to communicate with resources is by sending events to them. The <code>Alt.Emit(&quot;eventName&quot;, values)</code> works same as player events and supports all data types that are supported by exports.
 Every resource will get notified about the event. You can listen explicit for server events via <code>Alt.OnServer(&quot;eventName&quot;, OnServerEvent)</code>.
 The server event delegate needs to have to following signature.</p>
-<pre><code class="lang-csharp">public void OnServerEvent(object[] args)
+<pre><code class="lang-cs">public void OnServerEvent(object[] args)
 {
 }
 </code></pre>
@@ -145,7 +145,7 @@ The server event delegate needs to have to following signature.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/6779177ce31844d4b3f4557b1c669c4956570a01/docs/articles/resource-communication.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/9e1348ccc26bf974466bae3fdc9c23461a13b324/docs/articles/resource-communication.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

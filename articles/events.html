@@ -241,6 +241,12 @@ namespace AltV.Net
             add =&gt; Module.ColShapeEventHandler.Add(value);
             remove =&gt; Module.ColShapeEventHandler.Remove(value);
         }
+        
+        public static event VehicleDestroyDelegate OnVehicleDestroy
+        {
+            add =&gt; Module.VehicleDestroyEventHandler.Add(value);
+            remove =&gt; Module.VehicleDestroyEventHandler.Remove(value);
+        }
     }
 }
 </code></pre>
@@ -297,6 +303,8 @@ namespace AltV.Net.Events
 
     public delegate void WeaponDamageDelegate(IPlayer player, IEntity target, uint weapon, ushort damage,
         Position shotOffset, BodyPart bodyPart);
+    
+    public delegate void VehicleDestroyDelegate(IVehicle vehicle);
 }
 </code></pre>
 <p>The player event handler looks like this.</p>
@@ -312,7 +320,7 @@ namespace AltV.Net.Events
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/5130858939c7d4fe681f3bb5f8f4b93bc4ae9dd9/docs/articles/events.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/e5ad2aafd2e4983d0f9c0618785a71aa8b892e6d/docs/articles/events.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>General Alt:V Voice </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="General Alt:V Voice ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="general-altv-voice">General Alt:V Voice</h1>
+
+<h3 id="note-">Note :</h3>
+<hr>
+<ul>
+<li>You can´t use the Alt:V Voice without editing your Server.cfg!</li>
+</ul>
+<h1 id="before-we-start">Before we start...</h1>
+<hr>
+<h5 id="before-we-start-we-have-to-edit-our-servercfg-file">Before we start, we have to edit our Server.CFG File!</h5>
+<h5 id="so-we-add--voice--to-initialize-our-voice">So we add : voice: {} to initialize our Voice.</h5>
+<h5 id="this-would-look-like-that-">this would look like that :</h5>
+<pre><code class="lang-javascript">name: 'alt:V Server'
+host: 0.0.0.0
+port: 7788
+players: 128
+#password: ultra-password
+announce: false
+#token: YOUR_TOKEN
+gamemode: Freeroam
+website: example.com
+language: en
+
+// The Voice Initialization
+voice: {} //  &lt;---- We add this to our server.cfg File
+
+description: 'alt:V Sample Server'
+modules: [ 
+	csharp-module
+	node-module
+]
+resources: []
+</code></pre>
+<h1 id="create-a-voice-channel--add-players-to-it-3d">Create a Voice Channel &amp; Add Players to it [3D]</h1>
+<hr>
+<pre><code class="lang-csharp">using AltV.Net;
+using AltV.Net.Elements.Entities;
+
+namespace AltV.Wiki
+{
+    /* We create our IScript class */
+    public class AltV_Wiki : IScript
+    {
+        // We Create a Voicechat-Channel &amp; set it to 3D by setting ,, spatial &quot; to true.
+        public static IVoiceChannel channel = Alt.CreateVoiceChannel(true, 20f);
+
+        /* We declare &amp; Create our Event Handler. */
+        /* When a Player connects... it should put the Player into the VoiceChannel. */
+        [ScriptEvent(ScriptEventType.PlayerConnect)]
+        public void PlayerConnect(IPlayer player, string reason)
+        {
+            /* If a Player Connects... he will be added to our Voice Channel. */
+            channel.AddPlayer(player);
+        }
+
+        /* We declare &amp; Create our Event Handler. */
+        /* When a Player disconnects... it should remove the Player from the VoiceChannel. */
+        [ScriptEvent(ScriptEventType.PlayerDisconnect)]
+        public void OnPlayerDisconnect(IPlayer client, string reason)
+        {
+            /* If a Player Disconnects... he will be removed from our Voice Channel. */
+            channel.RemovePlayer(client);
+        }
+    }
+}
+</code></pre>
+<h1 id="how-use-the-voice-now">How use the Voice now?</h1>
+<h4 id="open-your-altv-and-go-to-the-header-point-called-settings">Open your Alt:V and go to the Header-Point called ,,Settings&quot;.</h4>
+<h4 id="here-you-can-change-your-voice-pushtotalk-buttons--more">Here you can change your Voice-PushToTalk Buttons &amp; more.</h4>
+<p><img src="images/voice_1.png" alt="Voice_1"></p>
+<hr>
+<h4 id="now-you-can-join-a-server-which-supports-voice--play">Now you can Join a Server which Supports Voice &amp; Play.</h4>
+<h4 id="if-you-press-your-setted-hotkey-your-local-player-will-move-his-mouth-if-voice-activition-was-successful">If you press your Setted Hotkey, your local player will move his mouth if Voice Activition was Successful.</h4>
+<p><img src="images/voice_2.png" alt="Voice_2"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/61f329934abeddb5b0da78fe12f556557759ebfc/docs/articles/Voice.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

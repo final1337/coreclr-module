@@ -165,7 +165,7 @@ Each type that works with <a href="https://fabianterhorst.github.io/coreclr-modu
 <h3 id="entity-remove">Entity remove</h3>
 <p>This is called every time you go out of the range of the entity.</p>
 <pre><code class="lang-js">alt.onServer(&quot;entitySync:remove&quot;, (entityId, entityType) =&gt; {
-    const entityData;
+    let entityData;
     if (entityData[entityType]) {
          entityData = entityData[entityType][entityId];
     } else {
@@ -179,7 +179,7 @@ Each type that works with <a href="https://fabianterhorst.github.io/coreclr-modu
 <h3 id="entity-position-update">Entity position update</h3>
 <p>This is called very time you update the entity position while you are in the range of the entity.</p>
 <pre><code class="lang-js">alt.onServer(&quot;entitySync:updatePosition&quot;, (entityId, entityType, position) =&gt; {
-    const entityData;
+    let entityData;
     if (entityData[entityType]) {
          entityData = entityData[entityType][entityId];
     } else {
@@ -223,7 +223,7 @@ Each type that works with <a href="https://fabianterhorst.github.io/coreclr-modu
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/bf64526a870f55b51eeb794f0648582ddd5db27c/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/b49bf2e9388dd4df1bf2ccc2d04780d74d531d8f/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

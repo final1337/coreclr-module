@@ -179,15 +179,15 @@ Each type that works with <a href="https://fabianterhorst.github.io/coreclr-modu
 <h3 id="entity-position-update">Entity position update</h3>
 <p>This is called very time you update the entity position while you are in the range of the entity.</p>
 <pre><code class="lang-js">alt.onServer(&quot;entitySync:updatePosition&quot;, (entityId, entityType, position) =&gt; {
-    let entityData;
+    let currEntityData;
     if (entityData[entityType]) {
-         entityData = entityData[entityType][entityId];
+         currEntityData = entityData[entityType][entityId];
     } else {
-         entityData = null;
+         currEntityData = null;
     }
     alt.log(entityId);
     alt.log(entityType);
-    alt.log(entityData);
+    alt.log(currEntityData);
 })
 </code></pre>
 <h3 id="entity-data-update">Entity data update</h3>
@@ -223,7 +223,7 @@ Each type that works with <a href="https://fabianterhorst.github.io/coreclr-modu
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d953065d8c48641df9fa420a5a7d29b332e97550/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/7debdcd20cc241868234a4c3c75653ef4fb0883a/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

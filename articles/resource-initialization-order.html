@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Resource initialization order </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Resource initialization order ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="resource-initialization-order">Resource initialization order</h1>
+
+<h2 id="why-you-should-know-the-initialization-order">Why you should know the initialization order</h2>
+<p>The <code>Resource</code> and <code>AsyncResource</code> classes provide overridable methods to modify the instantiation of players or vehicles and to modify the pools of those entities - just to name some.</p>
+<p>Now, one could need custom parameters while instantiating, for example, a new class inheriting from <code>IPlayer</code>, assuming that there exists a player factory (<code>MyPlayerFactory</code>) using a custom argument (<code>myConstant</code>) in the constructor, which is later on passed to the player class.</p>
+<pre><code class="lang-csharp">public override IEntityFactory&lt;IPlayer&gt; GetPlayerFactory()
+{
+    return new MyPlayerFactory(/* insert your value for myConstant */);
+}
+</code></pre>
+<p>This could be an example, where a constructor argument is needed. Now, consider the case where your player - and thus your player factory - needs a constructor value which is also used by other components later on in the initialization process.</p>
+<p>Then you probably would like to know which initialization order the alt:V follows, to provide the correct instances and values to all of your components.</p>
+<p>For example, for the example above, you would have to create the value in the constructor and save it to a class variable like this:</p>
+<pre><code class="lang-csharp">class MyResource : Resource
+{
+    private string mySecret;
+
+    public MyResource()
+    {
+        mySecret = &quot;1234&quot;;
+    }
+    
+    public override IEntityFactory&lt;IPlayer&gt; GetPlayerFactory()
+    {
+        return new MyPlayerFactory(mySecret);
+    }
+    
+    public override OnStart()
+    {
+        // we could need our secret also here
+        new AnotherComponent(mySecret);
+    }
+    
+    public override OnStop() {}
+}
+</code></pre>
+<h2 id="initialization-order">Initialization order</h2>
+<p>The initialization order is as follows:</p>
+<h3 id="1-resource-constructor">1. Resource constructor</h3>
+<p>A resource in C# is created by either inheriting from <code>Resource</code> or <code>AsyncResource</code> on a class and provide overrides for <code>OnStart()</code> and <code>OnStop()</code>.</p>
+<p>The constructor of the class inheriting from <code>Resource</code> or <code>AsyncResource</code> is called first, which makes sense because the class of the resource has to be instantiated.</p>
+<h3 id="2-entity-factories-and-entity-pool-methods">2. Entity factories and entity pool methods</h3>
+<p>Second, the entity factory and entity pool methods are called, since before the resource starts, the internal module (of type <code>Module</code>) has to know about all factories and pools as they can not be changed later on.</p>
+<h3 id="3-getmodule-override">3. <code>GetModule</code> override</h3>
+<p>After the creation of entity factories and entity pools, <code>GetModule</code> is called with all its arguments.</p>
+<h3 id="4-onstart-override">4. <code>OnStart</code> override</h3>
+<p>Nothing much to say about it. The literal start of the resource is about to be begin.</p>
+<h3 id="5-intermediate-overrides-and-events">5. Intermediate overrides and events</h3>
+<p>All events known to the public API (<code>AltV.Net.Alt.On...</code>) and the method <code>OnTick(...)</code> are possible to be called multiple times between <code>OnStart()</code> and <code>OnStop()</code>, since events can occur multiple times and a tick occurs every few milliseconds.</p>
+<h3 id="6-onstop-override-on-resource-stop-or-graceful-server-shutdown">6. <code>OnStop</code> override on resource stop OR graceful server shutdown</h3>
+<p>The last step is the stop of the alt:V server.</p>
+<p>Keep in mind that <code>OnStop</code> is only called if the resource was stopped manually using the alt:V API or by gracefully stopping the alt:V server. Otherwise, this event <strong>will not be executed</strong>!</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/a2d93f4b55d42d04c46ce4bb7afb0aa25dfbe5a2/docs/articles/resource-initialization-order.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

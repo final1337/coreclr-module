@@ -123,6 +123,18 @@ AltAsync.Do will execute any code inside of it on the main thread. And will retu
   var vehicle2 = Alt.CreateVehicle(VehicleModel.Chimera, player.Position, player.Rotation);
 });
 </code></pre>
+<h2 id="threadsafe-methods-from-altvnetalt">Threadsafe methods from <code>AltV.Net.Alt</code></h2>
+<h3 id="entity-pools">Entity pools</h3>
+<p>The <code>AltV.Net.Async.AltAsync</code> class does not provide methods to interact with entity pools/lists. If you are using an <code>AsyncResource</code>, the methods for entity pooling on <code>AltV.Net.Alt</code> are overwritten and are threadsafe to use. This includes the following methods:</p>
+<pre><code class="lang-csharp">public override IBaseEntityPool GetBaseEntityPool(IEntityPool&lt;IPlayer&gt; playerPool, IEntityPool&lt;IVehicle&gt; vehiclePool);
+public override IBaseObjectPool&lt;IBlip&gt; GetBlipPool(IBaseObjectFactory&lt;IBlip&gt; blipFactory);
+public override IBaseObjectPool&lt;ICheckpoint&gt; GetCheckpointPool(IBaseObjectFactory&lt;ICheckpoint&gt; checkpointFactory);
+public override IBaseObjectPool&lt;IColShape&gt; GetColShapePool(IBaseObjectFactory&lt;IColShape&gt; colShapeFactory);
+public override IEntityPool&lt;IPlayer&gt; GetPlayerPool(IEntityFactory&lt;IPlayer&gt; playerFactory);
+public override IEntityPool&lt;IVehicle&gt; GetVehiclePool(IEntityFactory&lt;IVehicle&gt; vehicleFactory);
+public override IBaseObjectPool&lt;IVoiceChannel&gt; GetVoiceChannelPool(IBaseObjectFactory&lt;IVoiceChannel&gt; voiceChannelFactory);
+</code></pre>
+<p>as they are overwritten in the <code>AsyncResource</code> class.</p>
 </article>
           </div>
           
@@ -131,7 +143,7 @@ AltAsync.Do will execute any code inside of it on the main thread. And will retu
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/52f947421cc7e415acb53fa0b9eb0b0003d49c69/docs/articles/async.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/a2d93f4b55d42d04c46ce4bb7afb0aa25dfbe5a2/docs/articles/async.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

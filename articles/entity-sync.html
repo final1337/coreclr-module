@@ -149,27 +149,39 @@ Each type that works with <a href="custom-events.html">Custom Events</a> also wo
 <h3 id="entity-create">Entity create</h3>
 <p>This is called every time you come in the range of the entity.</p>
 <p>The server assumes you cache the entity depending on the entity.id so make sure to do it.</p>
-<pre><code class="lang-js">alt.onServer(&quot;entitySync:create&quot;, (entityId, entityType, position, currEntityData) =&gt; {
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:create&quot;, (entityId, entityType, position, newEntityData) =&gt; {
     alt.log(entityId);
     alt.log(entityType);
     alt.log(position);
-    alt.log(entityData);
-    if (currEntityData) {
-      if (!entityData[entityType]) {
-         entityData[entityType] = {};
-      }
-      entityData[entityType][entityId] = currEntityData;
+    alt.log(newEntityData);
+    if (newEntityData) {
+       if (!entityData[entityType]) {
+          entityData[entityType] = {};
+       }
+       if (!entityData[entityType][entityId]) {
+            entityData[entityType][entityId] = {};
+       }
+       for (const key in newEntityData) {
+           entityData[entityType][entityId][key] = newEntityData[key];
+       }
     }
+    let currentEntityData;
+    if (entityData[entityType] &amp;&amp; entityData[entityType][entityId]) {
+      currentEntityData = entityData[entityType][entityId];
+    } else {
+      currentEntityData = null;
+    }
+    alt.log(currentEntityData);
 })
 </code></pre>
 <h3 id="entity-remove">Entity remove</h3>
 <p>This is called every time you go out of the range of the entity.</p>
 <pre><code class="lang-js">alt.onServer(&quot;entitySync:remove&quot;, (entityId, entityType) =&gt; {
-    let entityData;
+    let currentEntityData;
     if (entityData[entityType]) {
-         entityData = entityData[entityType][entityId];
+         currentEntityData = entityData[entityType][entityId];
     } else {
-         entityData = null;
+         currentEntityData = null;
     }
     alt.log(entityId);
     alt.log(entityType);
@@ -196,13 +208,15 @@ Each type that works with <a href="custom-events.html">Custom Events</a> also wo
     if (!entityData[entityType]) {
        entityData[entityType] = {};
     }
-    let currEntityData = entityData[entityType][entityId];
-    if (!currEntityData) {
+    if (!entityData[entityType][entityId]) {
          entityData[entityType][entityId] = {};
     }
-    for (const key in newEntityData) {
-        entityData[entityType][entityId][key] = newEntityData[key];
+    if (newEntityData) {
+       for (const key in newEntityData) {
+           entityData[entityType][entityId][key] = newEntityData[key];
+       }
     }
+    let currentEntityData = entityData[entityType][entityId];
 })
 </code></pre>
 <h3 id="entity-clear-cache">Entity clear cache</h3>
@@ -223,7 +237,7 @@ Each type that works with <a href="custom-events.html">Custom Events</a> also wo
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3b7d90303ac9a0ab37cd778d9286310841724c75/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/794805aefce1600bc2068b3630e49f8effbe6806/docs/articles/entity-sync.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
